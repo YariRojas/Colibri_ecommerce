@@ -37,7 +37,6 @@ body{
   }
  
 
-
   p.center {
     text-align: center;
     font-weight: bold;
@@ -66,7 +65,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50vh;
+            height: 70vh;
         }
         .contenedor figure{
            position:relative;
@@ -124,3 +123,14 @@ body{
           align-content: center;
         }
 
+        /*Responsividad*/
+
+        .row {
+          --bs-gutter-x: 1.5rem;
+          --bs-gutter-y: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: calc(-1 * var(--bs-gutter-y));
+          margin-right: calc(-.5 * var(--bs-gutter-x));
+          margin-left: calc(-.5 * var(--bs-gutter-x));
+        }
