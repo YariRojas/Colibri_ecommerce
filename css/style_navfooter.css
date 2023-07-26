@@ -1,0 +1,6 @@
+/* CLASE QUE CAMBIA LOS BOTONES DEL FOOTER*/
+.btn-primary {
+    background-color: hsl(135, 55%, 60%);
+    border-color: #ffffff;
+    color: #000b49;
+  }
