@@ -1,5 +1,5 @@
 function revisar(elemento){
-	if(elemento.value==''){
+	if(elemento.value==" "){
 		elemento.className='error';
 	}else{
 		elemento.className='input';
@@ -7,8 +7,9 @@ function revisar(elemento){
 }
 
 function revisaNumero(elemento){
-	if(elemento.value!==''){
-		var data = elemento.value;
+	if(elemento.value!==" "){
+		console.log("No es vacio");
+		let data = elemento.value;
 		if(isNaN(data)){
 			elemento.className='error';
 		}else{
@@ -19,7 +20,7 @@ function revisaNumero(elemento){
 
 function revisaLongitud(elemento, min){
 	if(elemento.value!==''){ 
-		var data = elemento.value;
+		let data = elemento.value;
 		if(data.length<min){
 			elemento.className='error';
 		}else{
@@ -33,8 +34,8 @@ function revisaLongitud(elemento, min){
 
 function revisarEmail(elemento){
 	if(elemento.value!==''){
-		var data = elemento.value;
-		var exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		let data = elemento.value;
+		let exp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		if(!exp.test(data)){
 			elemento.className='error';
 		}else{
@@ -44,10 +45,10 @@ function revisarEmail(elemento){
 }
 
 function validar(){
-	var datosCorrectos=true;
-	var error="";
+	let datosCorrectos=true;
+	let error="";
 
-	var exp=/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
+	let exp=/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
 	if(document.getElementById("nombre").value==""){
 		datosCorrectos=false;
 		error="\n El Nombre Esta Vacio";
