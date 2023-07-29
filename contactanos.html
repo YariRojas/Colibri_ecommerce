@@ -40,36 +40,47 @@
 <br>
 <br>
 <!--INICIO DE FORMULARIO-->
-
-    <form class="container"  action="https://formspree.io/f/xbjvlwpj"
-    method="POST">
-
-    
-    <div id="contenedor-form">
-			<form action="#" method="post" onsubmit="return validar()">
-				<p class="nombre">
-					<input type="text" class="input" placeholder="Nombre" id="nombre" name="nombre" onblur="revisar(this)" onkeyup="revisar(this)" autocomplete="off" required>
-				</p>
-				
-				<p class="email">
-					<input type="text" class="input" placeholder="Email*" id="email" name="email" onblur="revisar(this); revisarEmail(this)" onkeyup="revisar(this); revisarEmail(this)" autocomplete="off" required>
-				</p>
-				
-				<p class="telefono">
-					<input type="text" class="input" placeholder="Telefono*" id="telefono" name="telefono" onblur="revisar(this); revisaNumero(this)" onkeyup="revisar(this); revisaNumero(this)" autocomplete="off" required>
-				</p>
-				
-				<p class="mensaje">
-					<textarea class="input" id="mensaje" placeholder="Mensaje" name="mensaje" onblur="revisar(this); revisaLongitud(this, 30)" onkeyup="revisar(this); revisaLongitud(this, 30)" autocomplete="off" required></textarea>
-				</p>
-				
-				<div class="enviar">
-					<input type="submit" value="ENVIAR" id="enviar"/>
-					<div class="transicion"></div>
-				</div>
-      
-    </form>
-
+<center>
+<div class="container m-5"></div>
+<form action="" autocomplete="off" id="formulario" class="form-row">
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Nombre</label>
+    <input type="text"  id="nombre" name="nombre" class="form-control" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Telefono</label>
+    <input type="text" id="phone" name="phone"  class="form-control" id="validationCustom02" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Correo</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" id="email" name="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Comentarios</label>
+    <input type="text" id="comentarios" name="comentarios" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <br>
+  <div class="col-12">
+    <input id="btn-validar" value="Enviar" type="submit" class="btn btn-outline-primary w-50">
+  </div>
+</form>
+</div>
+</center>
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
