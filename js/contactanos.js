@@ -31,3 +31,4 @@ else{
     document.getElementById('comentarios').value='';
 }
 
+/*POR FAVOR AGREGAR FUNCIONALIDAD DE BOTÓN LIMPIAR*/
