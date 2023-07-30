@@ -6,9 +6,19 @@ body{
     
   }
  
-.colibritxt{
-  justify-content:center;
+h2{
+  text-align: center;
+  font-weight: bolder;
+  color: #4ED957;
+
 }
+.colibri{
+  display: flex;
+  align-content: center;
+  width: 400px;
+  
+}
+
   .btn-primary {
     background-color: hsl(135, 55%, 60%); 
     border-color: #ffffff;
