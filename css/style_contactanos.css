@@ -1,18 +1,23 @@
 .nosotros{
     text-align: justify;
     line-height: 1em;
-    font-family: Helvetica;
+    font-family: "Raleway";
 }
 
 body { 
     background-color:rgb(255, 255, 255);
-    text-align: center;
-    line-height: 1em;
+	
+	
+
+   
+   
 } 
 
 .info{
     text-align: center;
     line-height: 1em;
+	font-family: "Raleway";
+	font-size: 20px;
             
 }
         
@@ -39,6 +44,7 @@ html{
 	margin-top:65px;
 	border-radius:9px;
 	
+	
 }
  .input{
 	 color:#0D51D9;
@@ -49,6 +55,7 @@ html{
 	 margin-bottom:10px;
 	 width:100%;
 	 box-sizing:border-box;
+	 
 	 
  }
  

@@ -1,4 +1,9 @@
 /* CLASE QUE CAMBIA LOS BOTONES DEL FOOTER*/
+footer{
+  font-family:"Raleway";
+  font-size: 20px;
+
+}
 .btn-primary {
     background-color: hsl(135, 55%, 60%);
     border-color: #ffffff;
