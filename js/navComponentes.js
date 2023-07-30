@@ -8,9 +8,9 @@ navbar.insertAdjacentHTML("afterbegin",`
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class=" " class="navbar navbar-expand-lg">
 <div class="container-fluid">
-    <img src="./img/colibri.png" alt="Colibrí" class="colibri" width="70px">  
+    <img class="colibri" src="./img/colibri.png" alt="Colibrí" class="colibri" width="70px">  
     </br> 
                                                    
   <a class="navbar-brand" href="#"></a>
