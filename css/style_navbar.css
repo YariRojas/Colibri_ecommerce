@@ -20,3 +20,29 @@
   .navbar .nav-item:hover .nav-link {
     color: #4ED957; 
   }
+
+
+
+
+  
+   /*Responsividad*/
+      
+   @media (min-width: 768px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1024px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1200px) {
+    body{
+      background-color: #ffffff;
+    }
+   }
