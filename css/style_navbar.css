@@ -35,33 +35,7 @@ header{
 }
  
 
-img{
-    width: 50px;
-    cursor:pointer;
-   
-}
-
-.linksnav{
-    list-style: none; /*Desenlista*/
-}
-.linksnav li{
-    display: inline-block;
-    padding: 0px 20;
-}
-.linksnav li a{
-    transition: all 0.4s ease 0s; /*tiempo entre la transición del hover*/
-}
-.linksnav li a:hover{
-    color:#4ED957 ;
-}
-.icons{
-    display: flex;
-    justify-content: left;
-}
-.icons{
-    transition: all 0.4s ease 0s;
-}
-
-.icons:hover{
-    color:#4ED957 ;
-}
+  .navbar .nav-link.active,
+  .navbar .nav-item:hover .nav-link {
+    color: #4ED957; 
+  }

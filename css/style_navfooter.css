@@ -9,3 +9,28 @@ footer{
     border-color: #ffffff;
     color: #000b49;
   }
+
+
+
+  
+   /*Responsividad*/
+      
+   @media (min-width: 768px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1024px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1200px) {
+    body{
+      background-color: #ffffff;
+    }
+   }

@@ -138,14 +138,28 @@ h2{
           align-content: center;
         }
 
-        /*Responsividad*/
 
-        .row {
-          --bs-gutter-x: 1.5rem;
-          --bs-gutter-y: 0;
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: calc(-1 * var(--bs-gutter-y));
-          margin-right: calc(-.5 * var(--bs-gutter-x));
-          margin-left: calc(-.5 * var(--bs-gutter-x));
-        }
+
+
+        
+   /*Responsividad*/
+      
+   @media (min-width: 768px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1024px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1200px) {
+    body{
+      background-color: #ffffff;
+    }
+   }
