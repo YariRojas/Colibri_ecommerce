@@ -1,27 +1,8 @@
-
-header{
-    background-color:beige;
-}
-.nosotros{
-    text-align: justify;
-    line-height: 1em;
-}
-
-        body { background-color:beige;} 
-
-        .info{
-            text-align: center;
-            line-height: 1em;
-            
-        }
-
 .nosotros{
     text-align: justify;
     line-height: 1em;
     font-family: Helvetica;
 }
-
-
 
 body { 
     background-color:rgb(255, 255, 255);
@@ -34,29 +15,21 @@ body {
     line-height: 1em;
             
 }
-        
-       
-       
-       
-       
-       
-/* ----- ----- Validacion ----- ----- */
 
+/*--formulario--*/
 
-html{
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size: 100%;
-	background-attachment:fixed;
-}
+.row{
+	
+    display: flex;
+    flex-wrap: wrap;
+	padding: 35px 16px 36px 16px;
+	margin-right: 150px;
+	margin-left: 150px;
+  
+} /*Clase de los campos del formulario*/
 
-#contenedor-form{
-	width:450px;
-	background-color:rgb(255, 255, 255);
-	padding: 35px 45px 35px 50px;
-	margin:auto;
-	margin-top:65px;
-	border-radius:9px;
+.form-control{
+	border-color:hsl(135, 55%, 60%);
 	
 }
  .input{
@@ -194,4 +167,3 @@ textarea.error::-webkit-input-placeholder{
 }
  
  
-

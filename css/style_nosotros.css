@@ -1,9 +1,23 @@
 
-
+/**/
 body{
-    background-color: #F2f2f2;
-    font-family: "Quicksand";
+    background-color: white;
+    font-family:"Raleway";
+    
   }
+ 
+h2{
+  text-align: center;
+  font-weight: bolder;
+  color: #4ED957;
+
+}
+.colibri{
+  display: flex;
+  align-content: center;
+  width: 400px;
+  
+}
 
   .btn-primary {
     background-color: hsl(135, 55%, 60%); 
@@ -41,14 +55,15 @@ body{
     text-align: center;
     font-weight: bold;
     color:rgb(0, 0, 0);
-    font-family: 'Quicksand';
+    font-family: 'Raleway';
     }
 
     p.justify {
       text-align: justify;
+      
      
       color:rgb(0, 0, 0);
-      font-family: 'Quicksand';
+      font-family: 'Raleway';
     
     }
 
@@ -56,7 +71,7 @@ body{
 
   *{margin: 0;padding: 0;
     box-sizing: border-box;  
-    font-family:"Quicksand";
+   
 }
 
         
@@ -123,14 +138,28 @@ body{
           align-content: center;
         }
 
-        /*Responsividad*/
 
-        .row {
-          --bs-gutter-x: 1.5rem;
-          --bs-gutter-y: 0;
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: calc(-1 * var(--bs-gutter-y));
-          margin-right: calc(-.5 * var(--bs-gutter-x));
-          margin-left: calc(-.5 * var(--bs-gutter-x));
-        }
+
+
+        
+   /*Responsividad*/
+      
+   @media (min-width: 768px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1024px) { 
+    body{
+      background-color: #ffffff;
+    }
+  }
+   
+  
+  @media (min-width: 1200px) {
+    body{
+      background-color: #ffffff;
+    }
+   }
