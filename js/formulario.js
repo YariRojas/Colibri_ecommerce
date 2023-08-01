@@ -20,9 +20,6 @@ function validar(){
     }else if(!regexTel.test(tel)){
         alert("Tel invalido");
         return false;
-    }else if(mansaje === ""){
-        alert("Mensaje invalido");
-        return false;
     }
     else if (!regexMensaje.test(mensaje)){
         alert("Mensaje esta vacio");
@@ -30,3 +27,4 @@ function validar(){
     }
 
 }
+
