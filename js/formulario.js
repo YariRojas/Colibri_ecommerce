@@ -20,7 +20,7 @@ function validar(){
     }else if(!regexTel.test(tel)){
         alert("Tel invalido");
         return false;
-    }else if(mansaje === ""){
+    }else if(mensaje === ""){
         alert("Mensaje invalido");
         return false;
     }
