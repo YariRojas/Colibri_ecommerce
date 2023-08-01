@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d70362d3cb42af3ad6997747ff045b53bee8a07
 header{
     background-color:beige;
 }
@@ -14,12 +18,18 @@ header{
             line-height: 1em;
             
         }
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 4d70362d3cb42af3ad6997747ff045b53bee8a07
 .nosotros{
     text-align: justify;
     line-height: 1em;
     font-family: Helvetica;
 }
+
+
 
 body { 
     background-color:rgb(255, 255, 255);
@@ -192,4 +202,8 @@ textarea.error::-webkit-input-placeholder{
 }
  
  
+<<<<<<< HEAD
 >>>>>>> 731571c661e3ee14bac2a48cab6db6a0ea855c0c
+=======
+
+>>>>>>> 4d70362d3cb42af3ad6997747ff045b53bee8a07
