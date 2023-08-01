@@ -55,27 +55,28 @@
         <hr>
       </div>
     </div>
-    
 
-    <form action="" method="post" onsubmit="return validar()" id="form">
-      <div>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-      </div>
-      <div>
-        <input type="text" id="email" name="email" placeholder="Correo">
-      </div>
-      <div>
-        <input type="text" id="tel" name="tel" placeholder="Telefono">
-      </div>
-      <div>
-        <input type="text" id="mensaje" name="mensaje" placeholder="mensaje">
-        <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10"> </textarea> -->
-      </div>
-      <div>
-        <input type="submit" id="button" value="ENVIAR MENSAJE" >
-      
-      </div>
+
+   
+    <form action=""  onsubmit="return validar()" >
+        <div >
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        </div>
+        <div >
+            <input type="text" id="email" name="email" placeholder="Correo">
+        </div>
+        <div>
+            <input type="text" id="tel" name="tel" placeholder="Teléfono">
+        </div>
+        <div >
+           <input type="text" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div> 
     </form>
+       
+    <script src="./js/formularioprueba.js"></script>
 
 
     
@@ -88,36 +89,14 @@
     <div id="footer1">
 
     </div>
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+   
 
 
-    <script src="./js/formulario.js"></script>
     <script src="./js/navComponentes.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('m57wE7sVaen2KEdgu')</script>
 
 </body>
 
-<!-- <Script> const btn = document.getElementById('button');
-
-  document.getElementById('form')
-   .addEventListener('submit', function(event) {
-     event.preventDefault();
-  
-     btn.value = 'ENVIANDO...';
-  
-     const serviceID = 'default_service';
-     const templateID = 'template_gpcxgkq';
-  
-     emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'ENVIAR MENSAJE';
-        alert('Formulario enviado');
-      }, (err) => {
-        btn.value = 'ENVIAR MENSAJE';
-        alert(JSON.stringify(err));
-      });
-  });
-</Script> -->
 
 </html>
