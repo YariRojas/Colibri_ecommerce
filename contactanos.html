@@ -54,7 +54,29 @@
 <!--INICIO DE FORMULARIO-->
 
 <h1>Contáctanos</h1>
-<div action="" autocomplete="off" id="form" class="form-row">
+
+<form action="" method="post" onsubmit="return validar()">
+  <div >
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+  </div>
+  <div >
+      <input type="text" id="email" name="email" placeholder="Correo">
+  </div>
+  <div>
+      <input type="text" id="tel" name="tel" placeholder="Teléfono">
+  </div>
+  <div >
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje">
+      </textarea>
+  </div>
+  <div>
+      <input type="submit" value="Enviar">
+  </div>
+</form>
+<script src="./js/formulario.js"></script>
+
+
+<!-- <div action="" autocomplete="off" id="form" class="form-row">
   <form class="row">
   <div class="mb-3 col-6">
     <label for="validationCustom01" class="form-label">Nombre</label>
@@ -111,7 +133,7 @@
   </div>
 </form>
 </div>
- </div>
+ </div> -->
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 
