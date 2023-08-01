@@ -21,10 +21,10 @@ function validar(){
         alert("Tel invalido");
         return false;
     }
-    else if (!regexMensaje.test(mensaje)){
-        alert("Mensaje esta vacio");
-        return false;
-    }
+    // else if (!regexMensaje.test(mensaje)){
+    //     alert("Mensaje esta vacio");
+    //     return false;
+    // }
 
 }
 
