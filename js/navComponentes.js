@@ -20,7 +20,7 @@ navbar.insertAdjacentHTML("afterbegin",`
                     </a></li>
                   <li><a href="./productos.html">PRODUCTOS</a></li>
                   <li><a href="./nosotros.html">NOSOTROS</a></li>
-                  <li><a href="./contactanos.html">CONTÁCTANOS</a></li>              
+                  <li><a href="./formulario.html">CONTÁCTANOS</a></li>              
                 </ul>  
             
         </nav>
@@ -68,7 +68,7 @@ footer.insertAdjacentHTML("beforeend",`
             <li class="nav-item mb-3"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
             <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-body-secondary">Productos</a></li>
             <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
-            <li class="nav-item mb-2"><a href="./contactanos.html" class="nav-link p-0 text-body-secondary">Contáctanos</a></li>
+            <li class="nav-item mb-2"><a href="./formulario.html" class="nav-link p-0 text-body-secondary">Contáctanos</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Login</a></li>
             
         
