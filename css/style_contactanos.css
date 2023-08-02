@@ -1,3 +1,10 @@
+*{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
 .nosotros{
     text-align: justify;
     line-height: 1em;
@@ -8,6 +15,7 @@ body {
     background-color:rgb(255, 255, 255);
     text-align: center;
     line-height: 1em;
+	min-height: 100%;
 } 
 
 .info{
@@ -166,4 +174,14 @@ textarea.error::-webkit-input-placeholder{
   }
 }
  
- 
+ #formu{
+	display: flex;
+	justify-content: flex-start
+
+ }
+
+ #contac{
+	display: flex;
+	justify-content: flex-end;
+
+ }
