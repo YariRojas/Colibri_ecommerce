@@ -1,0 +1,86 @@
+.container{
+    
+    font-family: 'Raleway';
+
+}
+/*Afección del titulo*/
+#titulo{
+    
+    font-weight: bold;
+    font-size:50px;
+    text-align: center;
+    padding: 50px;
+    color: #4ED957;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.card{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    padding: px;
+    margin:10px;
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+.col-md-12{
+    align-items:center;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height:600px;
+}
+.price-shop{
+    margin: 0px;
+
+    
+    width: 100%;
+    height: 180px;
+    
+
+}
+
+.color-btn-header{
+    background-color: #4ED957;
+    
+}
+.color-btn-header:hover{
+    background-color: #39a140;
+    
+}
+.card-img-top{
+   box-sizing: 10px;
+}
+.btn{
+    display: block;
+    justify-content: center;
+    padding: 10px;
+} 
+    
+    
+.color-btn-card{
+    color: white;
+    font-weight: bold;
+}
+
+h5{
+    font-weight: bold;
+}
+h5:hover{
+    color:#4ED957;
+}
+h4{
+    color:#4ED957;
+    font-weight: bold;
+    
+}
+

@@ -27,37 +27,64 @@ function getData(){
     function createCards(prods){
         prods.forEach( prod => {
             shopContent.insertAdjacentHTML("beforeend",
-            `<div class="card" style="width: 18rem;">
-            <img src="${prod.img}" class="card-img-top" alt="${prod.Informacion}">
-            <div class="card-body">
-            <h5 class="card-title">${prod.name}</h5>
-            <p class="card-text"><strong>${prod.categoria}</strong></p>
-            <p class="card-text">${prod.Informacion.slice(0,80)}...</p>
-            <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#examppleModal_$(proud.id)">
-            Comprar
-            </button>
-            </div>
-            </div>
-            <!--card-->
-            <!--Modal-->
-            <div class="modal fade" id="exampleMdal_${prod.id}" tabindex="-1" aria-labelledly="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-             <h1 class="modal-title fs-5" id="exampleModalLabel">${prod.name}</h1>
-             <button type="button" class="btn-close" data-bs-dismiss="modal"> aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            ${prod.Informacion}
-            <p class="text-end"><strong>$ ${prod.precio} USD </strong></p>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close></button>
-            </div>
-        </div>
-    </div>
-</div>
+            `
+            <div class="row row-cols-1 row-cols-md-1 g-1">
+              <div class="col">
+                <div class="card h-100">
+                      <img src="${prod.img}" class="card-img-top" alt="img prod">
+                      <div class="card-body price-shop">
+                        <h5 class="card-title"> ${prod.name}</h5>
+                        <br>
+                        
+                        <h4>${prod.Informacion.slice(0,80)}</h4>
+                        </br>
+                          <!--Boton card-->
+                          <button type="button" class="btn color-btn-header color-btn-card" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                          </svg>
+                          Comprar
+                      </div>
+                </div>
+                
+              </div>
             `);
         });
     } // create cards
+
+
+
+
+
+    
+//     <div class="card" style="width: 18rem;">
+//             <img src="${prod.img}" class="card-img-top" alt="${prod.Informacion}">
+//             <div class="card-body">
+//             <h5 class="card-title">${prod.name}</h5>
+//             <p class="card-text"><strong>${prod.categoria}</strong></p>
+//             <p class="card-text">${prod.Informacion.slice(0,80)}...</p>
+//             <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#examppleModal_$(proud.id)">
+//             Comprar
+//             </button>
+//             </div>
+//             </div>
+//             <!--card-->
+//             <!--Modal-->
+//             <div class="modal fade" id="exampleMdal_${prod.id}" tabindex="-1" aria-labelledly="exampleModalLabel" aria-hidden="true">
+//     <div class="modal-dialog">
+//         <div class="modal-content">
+//             <div class="modal-header">
+//              <h1 class="modal-title fs-5" id="exampleModalLabel">${prod.name}</h1>
+//              <button type="button" class="btn-close" data-bs-dismiss="modal"> aria-label="Close"></button>
+//             </div>
+//             <div class="modal-body">
+//             ${prod.Informacion}
+//             <p class="text-end"><strong>$ ${prod.precio} USD </strong></p>
+//             </div>
+//             <div class="modal-footer">
+//             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close></button>
+//             </div>
+//         </div>
+//     </div>
+// </div>
 
