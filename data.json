@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "img":"./img/blusa flor roja.png",
+        "Informacion": "jjj",
+        "name":"Producto 1",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 2,
+        "img":"./img/blusa flores rosas.png",
+        "Informacion": "hhh",
+        "name":"Producto 2",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    },
+
+    {
+        "id": 3,
+        "img":"./img/vestido rojo.png",
+        "Informacion": "kkk",
+        "name":"Producto 3",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 4,
+        "img":"./img/blusa rosa.png",
+        "Informacion": "",
+        "name":"Producto 4",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+    
+    {
+        "id": 5,
+        "img": "./img/vestido blanco.png",
+        "Informacion": "",
+        "name":"Producto 5",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+    
+    {
+        "id": 6,
+        "img":"./img/blusa blanca con azul.png",
+        "Informacion": "",
+        "name":"Producto 6",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 7,
+        "img":"./img/blusa amarilla.png",
+        "Informacion": "",
+        "name":"Producto 7",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 8,
+        "img":"./img/huipil.png",
+        "Informacion": "",
+        "name":"Producto 8",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 9,
+        "img":"./img/huipil negro.png",
+        "Informacion": "",
+        "name":"Producto 9",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 10,
+        "img":"./img/vestido negro.png",
+        "Informacion": "",
+        "name":"Producto 10",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    }
+]
