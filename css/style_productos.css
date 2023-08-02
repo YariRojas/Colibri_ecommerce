@@ -1,8 +1,63 @@
-#title{
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size:30px;
-    text-align: center;
-    padding: 30px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    padding-top: 80px
+}
+
+img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50 px;
+    margin-bottom: 20px;
+}
+
+.container>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #06cf5a;
+    border-radius: 20px;
+}
+
+.container>div:hover{
+    background-color: #0270ee;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+}
+
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}

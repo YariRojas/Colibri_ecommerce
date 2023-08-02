@@ -1,5 +1,5 @@
 
-/**/
+/*
 body{
     background-color: white;
     font-family:"Raleway";
@@ -68,7 +68,7 @@ h2{
     }
 
     /* CAMBIO DE FUENTE DE LETRA*/
-
+/*
   *{margin: 0;padding: 0;
     box-sizing: border-box;  
    
@@ -142,7 +142,7 @@ h2{
 
 
         
-   /*Responsividad*/
+   /*Responsividad
       
    @media (min-width: 768px) { 
     body{
@@ -163,3 +163,4 @@ h2{
       background-color: #ffffff;
     }
    }
+   */
