@@ -64,7 +64,7 @@ footer.insertAdjacentHTML("beforeend",`
         <div class="col-5 col-md-6 mb-4">
           <h4>DIRECTORIO</h4>
           
-          <ul class="nav flex-column">
+          <ul class="nav col-xs-12 col-sm-12 col-md-8 col-lg-6">
             <li class="nav-item mb-3"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
             <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-body-secondary">Productos</a></li>
             <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
@@ -78,7 +78,7 @@ footer.insertAdjacentHTML("beforeend",`
         
   
   
-        <div class="col-md-5 offset-md-1 mb-5">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
           <form>
             <h5>Suscribete a nuestro newsletter</h5>
             <p>¡Recibe las mejores ofertas!</p>
