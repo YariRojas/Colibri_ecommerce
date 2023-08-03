@@ -21,7 +21,7 @@ navbar.insertAdjacentHTML("afterbegin",`
                     </a></li>
                   <li><a href="./productos.html">PRODUCTOS</a></li>
                   <li><a href="./nosotros.html">NOSOTROS</a></li>
-                  <li><a href="./formulario.html">CONTÁCTANOS</a></li>              
+                  <li><a href="./formularioPrueba.html">CONTÁCTANOS</a></li>              
                 </ul>  
             
         </nav>
