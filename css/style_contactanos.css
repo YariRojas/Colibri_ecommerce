@@ -1,3 +1,65 @@
+body { 
+    background-color:rgb(255, 255, 255);
+    line-height: 1em;
+	font-family:Raleway;
+} 
+
+/*---CONTACTO---*/
+
+.contacto{
+	text-align: center;
+}
+
+/*--FORMULARIO--*/
+
+label{
+	margin-top: 10px;
+	margin-bottom: 8px;
+	text-align: left;
+	
+}
+.form-control{
+	border-color:hsl(135, 55%, 60%);
+	border-radius: 20px;
+	margin: 0px 0px 17px 0px;
+	
+} /*cambia el color del borde*/
+
+.form-row{
+	margin: 10px 40px 10px 40px;
+	padding: 20px 20px 20px 20px;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	line-height:150%;
+	resize:none;
+	
+}
+
+.btn-btn-primary{
+	background-color: hsl(135, 55%, 60%);
+	border-radius: 50px;
+	
+}
+
+/*Responsividad*/
+
+#formu{
+	display: flex;
+	justify-content: flex-start
+
+ }
+
+ #contac{
+	display: flex;
+	justify-content: flex-end;
+
+ }
+
+
+
 /*.nosotros{
     text-align: justify;
     line-height: 1em;
@@ -9,28 +71,6 @@
 	    line-height: 1em;
             
 }*/
-
-body { 
-    background-color:rgb(255, 255, 255);
-    text-align: center;  line-height: 1em;
-	font-family:Raleway;
-} 
-
-/*--FORMULARIO--*/
-
-.form-control{
-	border-color:hsl(135, 55%, 60%);
-	
-} /*cambia el color del borde*/
-
-textarea{
-	width:100%;
-	height:100px;
-	line-height:150%;
-	resize:none;
-	
-}
-
 /*
 .btn-enviar{
    float:left;
@@ -160,17 +200,3 @@ textarea.error::-webkit-input-placeholder{
     padding-right: 3%;
   }
 }*/
-
-/*Responsividad*/
-
- #formu{
-	display: flex;
-	justify-content: flex-start
-
- }
-
- #contac{
-	display: flex;
-	justify-content: flex-end;
-
- }
