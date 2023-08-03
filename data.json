@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "img":"./img/blusa flor roja.png",
+        "Informacion": "$2,700",
+        "name":"Vestido, rojo carmsí",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 2,
+        "img":"./img/blusa flores rosas.png",
+        "Informacion": "$2,700",
+        "name":"Atuendo típico Oaxaqueño",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    },
+
+    {
+        "id": 3,
+        "img":"./img/vestido rojo.png",
+        "Informacion": "$2,300",
+        "name":"Blusa y falda",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 4,
+        "img":"./img/blusa rosa.png",
+        "Informacion": "$1,700",
+        "name":"Blusa, rosa mexicano ",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+    
+    {
+        "id": 5,
+        "img": "./img/vestido blanco.png",
+        "Informacion": "$1,500",
+        "name":"Vestido, mantita",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+    
+    {
+        "id": 6,
+        "img":"./img/blusa blanca con azul.png",
+        "Informacion": "$2,700",
+        "name":"Atuendo típico, azul",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 7,
+        "img":"./img/blusa amarilla.png",
+        "Informacion": "$1,700",
+        "name":"Blusa, solecito",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 8,
+        "img":"./img/huipil.png",
+        "Informacion": "$2,700",
+        "name":"Atuendo típico, siempre Otoño",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 9,
+        "img":"./img/huipil negro.png",
+        "Informacion": "$1,700",
+        "name":"Blusa, negro es mejor",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 10,
+        "img":"./img/vestido negro.png",
+        "Informacion": "$2,700",
+        "name":"Vestido, negro azabache",
+        "precio": 700,
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    }
+]
