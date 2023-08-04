@@ -1,0 +1,22 @@
+/*titulo*/
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Raleway', cursive;
+    background-color: hsl(135, 55%, 60%);
+    background: linear-gradient(90deg, #09fa96, #0516fa);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 3px rgb(33, 29, 238);
+    color: rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+/*cambia el color del borde*/
+.form-control {
+    border-color:hsl(236, 94%, 46%);
+	border-radius: 50px;
+    box-shadow: 1px 1px 4px 4px hsl(135, 55%, 60%);
+	margin: 10px 10px 17px 10px;
+  }
