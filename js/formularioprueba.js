@@ -19,19 +19,19 @@ function validar(){
 
     //Validar
     if (!regexNombre.test(nombre)){
-        alert("Nombre invalido");
+        alert("Nombre inválido");
         return false;
     }
     else if (!regexCorreo.test(email)){
-        alert("Email invalido");
+        alert("Email inválido");
         return false;
     }
     else if (!regexTel.test(tel)){
-        alert("Telefono no es valido");
+        alert("Teléfono inválido");
         return false;
     }
     else if (!regexMensaje.test(mensaje)){
-        alert("Mensaje invalido");
+        alert("Mensaje inválido");
         return false;}
     }
 
