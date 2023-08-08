@@ -1,46 +1,43 @@
 let navbar=document.getElementById("nav1");
 let footer=document.getElementById("footer1");
 
-//let navbar2=document.getElementById("nav2");
-//let footer2=document.getElementById("footer2");
 
-//Vamos a insertar nuestro navbar
+
 
 
 navbar.insertAdjacentHTML("afterbegin",`
-<header class="">
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-<header class="container">
+<nav class="navbar ">
+        <a href="javascript:void(0);" class="navbar-toggler-icon" onclick="myFunction()">
 
-        <nav>
-                <img src="./img/colibri.png">
-              
-                <ul class="linksnav">
-                  <li><a href="./index.html">
-                      INICIO
-                    </a></li>
-                  <li><a href="./productos.html">PRODUCTOS</a></li>
-                  <li><a href="./nosotros.html">NOSOTROS</a></li>
-                  <li><a href="./formularioPrueba.html">CONTÁCTANOS</a></li>              
-                </ul>  
-            
-        </nav>
-        <li class="icons"><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/></svg></li>
-      <li class="icons"><a href="search"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-          <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-          <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-        </svg></a></li>
-      <li class="icons"><a href="Carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg></a></li>
-    </header>`);
+        </a>
+        <div class="img-container">
+            <img src="./img/LOGO.png" alt="Logo" class="logoC">
+        </div>
+        <div class="enlaces-container" style="text-align: center;" id="enlacesNav">
+
+        </div>
+        <div class="login-container" style=" text-align: center;" id="botonesNav">
+
+        </div>
+        <div class="navlinksContainer" id="containerDivlinks" style="display: none;">
+            <a href="./productos.html">PRODUCTOS</a>
+            <a href="./nosotros.html">NOSOTROS</a>
+            <a href="./contacto.html">CONTÁCTANOS</a>
+        </div>
+        <div class="topnav" id="topnav" style="border: none;">
+            <div id="myLinks">
+                <a href="./index.html">INICIO</a>
+                <a href="./productos.html">PRODUCTOS</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./contacto.html">CONTÁCTANOS</a>
+            </div>
+        </div>
+    </nav>`);
 
 
-footer.insertAdjacentHTML("beforeend",`
+
+
+  footer.insertAdjacentHTML("beforeend",`
 <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top"></div>
 <div class="container">
      
@@ -50,10 +47,10 @@ footer.insertAdjacentHTML("beforeend",`
           <h4>DIRECTORIO</h4>
           
           <ul class="nav col-xs-12 col-sm-12 col-md-8 col-lg-6">
-            <li class="nav-item mb-3"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-            <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-body-secondary">Productos</a></li>
-            <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-body-secondary">Nosotros</a></li>
-            <li class="nav-item mb-2"><a href="./formulario.html" class="nav-link p-0 text-body-secondary">Contáctanos</a></li>
+            <li class="nav-item mb-3"><a href="./index.html" class="nav-link p-0 text-body-secondary">Inicio </a></li>
+            <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-body-secondary"> Productos </a></li>
+            <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-body-secondary"> Nosotros </a></li>
+            <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-body-secondary"> Contáctanos </a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Login</a></li>
 
             <li class="nav-item mb-2"><a href="./formularioProductos.html" class="nav-link p-0 text-body-secondary">Formulario Productos</a></li>
@@ -83,6 +80,9 @@ footer.insertAdjacentHTML("beforeend",`
         <div class="container text-center">
             <p>&copy; 2023 COLIBRÍ. Todos los derechos reservados.</p>
         </div>
+        
+
+    </div>
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
           <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
@@ -92,4 +92,42 @@ footer.insertAdjacentHTML("beforeend",`
     </footer>
   </div>`);
 
-
+  let enlacesNav = document.getElementById("enlacesNav");
+  let botonesNav = document.getElementById("botonesNav");
+  
+  
+  let enlaces = `<a href="./index.html" style="padding-left: 20px;">INICIO</a>
+                  <a href="./productos.html" style="padding-left: 20px;">PRODUCTOS</a>
+                  <a href="./nosotros.html" style="padding-left: 20px;">NOSOTROS</a>
+                  <a href="./contacto.html" style="padding-left: 20px;">CONTÁCTANOS</a>`
+  
+  let botones = `
+              <ul class="lista">
+                  <li>
+                      <a href="./login.html"><img src="./img/amigo.gif" alt="login" id="login"</a>
+                  </li>
+                  <li>
+                      <a href="./CarritoCompras.html"><img src="./img/carrito-de-compras.gif" alt="carrito" id="carrito"></a>
+                  </li>
+              </ul>`
+  
+ 
+  window.addEventListener("load", function (event) {
+      event.preventDefault;
+      enlacesNav.insertAdjacentHTML("beforeend", enlaces);
+      botonesNav.insertAdjacentHTML("beforeend", botones);
+  });
+  
+  function myFunction() {
+      //var topnav = document.querySelector(".topnav");
+      let topnav = document.getElementById("topnav");
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        topnav.style.height = "0";
+      } else {
+        x.style.display = "block";
+        topnav.style.height = "100%";
+      }
+  }
+  
