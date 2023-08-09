@@ -19,19 +19,35 @@ function validar(){
 
     //Validar
     if (!regexNombre.test(nombre)){
-        alert("Nombre inválido");
+        Swal.fire({
+            icon: 'error',
+            title: 'Nombre inválido',
+            text: 'Inténtalo de nuevo',
+          });
         return false;
     }
     else if (!regexCorreo.test(email)){
-        alert("Email inválido");
+        Swal.fire({
+            icon: 'error',
+            title: 'Email inválido',
+            text: 'Inténtalo de nuevo',
+          });
         return false;
     }
     else if (!regexTel.test(tel)){
-        alert("Teléfono inválido");
+        Swal.fire({
+            icon: 'error',
+            title: 'Teléfono inválido',
+            text: 'Inténtalo de nuevo',
+          });
         return false;
     }
     else if (!regexMensaje.test(mensaje)){
-        alert("Mensaje inválido");
+        Swal.fire({
+            icon: 'error',
+            title: 'Mensaje inválido',
+            text: 'Inténtalo de nuevo',
+          });
         return false;}
     }
 
