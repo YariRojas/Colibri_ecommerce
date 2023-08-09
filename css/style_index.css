@@ -1,7 +1,7 @@
    /*CARRUSEL DE PRODUCTOS*/
 body{
  /* background-color: rgb(255, 235, 208);*/
-    background:linear-gradient(30deg, rgb(236, 252, 241),rgb(188, 255, 214), rgb(137, 252, 181), rgb(76, 255, 121));
+ /*   background:linear-gradient(30deg, rgb(236, 252, 241),rgb(188, 255, 214), rgb(137, 252, 181), rgb(76, 255, 121));*/
 }
   .carousel{
     max-width: 800px;
