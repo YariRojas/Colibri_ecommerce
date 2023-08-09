@@ -1,61 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COLIBRÍ 🌻</title>
-    <link rel="icon" type="image/x-icon" href="img/iconcolibri.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./css/style_navfooter.css">
-    <link rel="stylesheet" href="./css/style_navbar.css"> -->
-    <link rel="stylesheet" href="./css/style_registrousuarios.css">
-    <link rel="stylesheet" href="./css/style_productos.css">
-  </head>
-  <body>
 
-   
-    <header id="nav1"></header>
-      <div>
-        <p id="titulo">TODOS LOS PRODUCTOS</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COLIBRÍ_PRODUCTOS</title>
+  <link rel="icon" type="image/x-icon" href="img/colibri.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style_navbar&footer.css">
+  <link rel="stylesheet" href="./css/style_productos.css">
+</head>
 
-
-    
+<body>
+  <header id="nav1"></header>
+  <div>
+    <p id="titulo">TODOS LOS PRODUCTOS</p>
     <main class="container">
-    <div id="shopContent" class="row row-cols-1 row-cols-md- row-cols-lg-3 g-3" ></div>
-  </main>
+      <div id="shopContent" class="row row-cols-1 row-cols-md- row-cols-lg-3 g-3"></div>
+    </main>
 
-  <!--NAVIGATION-->
-  <div class="col-md3 row" style="text-align:center;">
-    <p><ul class="pagination" role="navigation">
+    <!--NAVIGATION-->
+    <div class="col-md3 row" style="text-align:center;">
+      <p>
+      <ul class="pagination" role="navigation">
+        <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+          <span class="page-link" aria-hidden="true">&lsaquo;</span>
+        </li>
+        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+        <li class="page-item">
+          <a class="page-link" href="nosotros.html" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+        </li>
+      </ul>
+      </p>
+    </div>
+    <div id="footer1"></div>
 
-      <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
-      <span class="page-link" aria-hidden="true">&lsaquo;</span>
-      </li>
-
-
-      
-    
-    
-      <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-                                              
-                                                
-
-      <li class="page-item">
-      <a class="page-link" href="nosotros.html" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
-    </li>
-    </ul>
-</p>
-</div>
-
-           
-          <div id="footer1">
-          </div>
+    <a href="./formularioProductos.html" class="btn btn-primary"> ¿Erés miembro de nuestro equipo? ¡Entra aquí!</a>
 
     <script src="./js/navComponentes.js"></script>
     <script src="./js/productos.js"></script>
     <script src="./data.json"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>

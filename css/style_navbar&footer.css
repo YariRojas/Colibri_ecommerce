@@ -3,11 +3,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
+
+
 }
 
 body {
     min-height: 100%;
-    color: #bb57dc;
+    color: rgb(0, 60, 255);
 }
 
 .form-control{
@@ -15,10 +17,10 @@ body {
 }
 .ingr{
     text-align: center;
-    color: #e13bbc;
+    color: #15ff00;
 }
 .tituloLog{
-    color: #e13bbc;
+    color: #15ff00;
 }
 
 
@@ -29,7 +31,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #ff632b;
+    color: #15ff00;
 }
 
 
@@ -38,8 +40,6 @@ a {
     background-color:#ffffff;
 
 }
-
-
 
 /*Celular*/
 @media(max-width: 899px) {
@@ -59,7 +59,7 @@ a {
       }
       
       .topnav a {
-        color: #ff632b;
+        color: #15ff00;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
@@ -118,45 +118,16 @@ a {
         display: none;
     }
 
-    .registrate {
-        grid-area: registrate;
-        padding: 50px;
-        
-    }
-    
-    .ingresar{
-        grid-area: ingresar;
-        padding: 50px;
-    }
-    .grid-container {
+     .grid-container {
         display: grid;
         grid-template-rows: auto auto auto auto auto;
         grid-template-columns: auto;
         grid-template-areas:
             'navbar'
-            'registrate'
-            'ingresar'
             'footer1';
         gap: 0px;
         height: 100%;
     }
-  
-    .footer1 {
-        display: grid; 
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-         'col2 col3'
-         'col4 col5';
-        
-        gap: 0px;
-        height: 100%;
-    } 
-
-    .enlaces-container {
-        display: none;
-    }
-      
 }
 
 
@@ -180,16 +151,6 @@ a {
         '. img-container img-container img-container login-container'
         '. enlaces-container enlaces-container enlaces-container login-container';
     }
-
-
-
-
-
-    
-
-
-
-
 
     /* NAVBAR */
     .img-container {
@@ -228,15 +189,6 @@ a {
         width: 30px;
         height: 40px;
     }
-    .registrate {
-        grid-area: registrate;
-        padding: 50px;
-    }
-    
-    .ingresar{
-        grid-area: ingresar;
-        padding: 50px;
-    }
 
     .grid-container {
         display: grid;
@@ -244,89 +196,13 @@ a {
         grid-template-columns: 50% 50%;
         grid-template-areas:
             'navbar navbar'
-            'registrate ingresar'
-            'registrate  ingresar'
             'footer1 footer1';
         gap: 0px;
         height: 100%;
     }
    
-    .footer1 {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            'col1 col2 col3 col4 col5 col6';
 
-        gap: 0px;
-        height: 100%;
-
-    }   
 }
-
-
-/* FOOTER*/
-.bg-footer {
-    background-color: #bb57dc;
-}
-
-.footer1 {
-    grid-area: footer1;
-}
-
-.facebook {
-    grid-area: facebook;
-    width: 50px;
-    height: 50px;
-}
-
-.instagram {
-    grid-area: instagram;
-    width: 50px;
-    height: 50px;
-}
-
-
-.col1 {
-    grid-area: col1;
-    padding: auto;
-    text-align: center;
-}
-
-.col2 {
-    grid-area: col2;
-    padding: auto;
-    text-align: center;
-    position: relative;
-    bottom: 15px;
-}
-
-.col3 {
-    grid-area: col3;
-    padding: auto;
-    text-align: center;
-}
-
-.col4 {
-    grid-area: col4;
-    padding: auto;
-    text-align: center;
-}
-
-.col5 {
-    grid-area: col5;
-    padding: auto;
-    text-align: center;
-    position: relative;
-    bottom: 34px;
-}
-
-.col6 {
-    grid-area: col6;
-    padding: auto;
-    text-align: center;
-}
-
 
 
 

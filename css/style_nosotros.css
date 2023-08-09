@@ -19,35 +19,7 @@ h2{
   
 }
 
- 
-        
-   /*Responsividad
-      
-   @media (min-width: 768px) { 
-    body{
-      background-color: #ffffff;
-    }
-  }
-   
-  
-  @media (min-width: 1024px) { 
-    body{
-      background-color: #ffffff;
-    }
-  }
-   
-  
-  @media (min-width: 1200px) {
-    body{
-      background-color: #ffffff;
-    }
-   }
-   */
-
-
-
-   
-    
+     
 
    .contenedor{
     width: 100%;
@@ -95,10 +67,10 @@ h2{
 }
 .contenedor figure .capa h3{
     color: #fff;
-    font-weight: 400;
-    margin-bottom: 120px;
+    font-weight: 50px;
+    margin-bottom: 50px;
     transition: all 400ms ease-out;
-     margin-top: 30px;
+     margin-top: 80px;
 }
 .contenedor figure .capa p{
     color: #fff;

@@ -1,86 +1,79 @@
-.container{
-    
+.container {
     font-family: 'Raleway';
-
 }
+
 /*Afección del titulo*/
-#titulo{
-    
+#titulo {
+
     font-weight: bold;
-    font-size:50px;
+    font-size: 50px;
     text-align: center;
     padding: 50px;
-    color: #4ED957;
+    color: rgb(0, 60, 255);
 }
-.container{
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 10px;
 }
-.card{
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+
+.card {
+    box-shadow: 0px 1px 10px rgba(0, 162, 255, 0.993);
     padding: px;
-    margin:10px;
+    margin: 10px;
     cursor: default;
     transition: all 400ms ease;
-
 }
 
-.col-md-12{
-    align-items:center;
+.col-md-12 {
+    align-items: center;
 }
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
 
-.card img{
+.card img {
     width: 100%;
-    height:600px;
+    height: 600px;
 }
-.price-shop{
-    margin: 0px;
 
-    
+.price-shop {
+    margin: 0px;
     width: 100%;
     height: 180px;
-    
-
 }
 
-.color-btn-header{
+.color-btn-header {
     background-color: #4ED957;
-    
 }
-.color-btn-header:hover{
+
+.color-btn-header:hover {
     background-color: #39a140;
-    
 }
-.card-img-top{
-   box-sizing: 10px;
+
+.card-img-top {
+    box-sizing: 10px;
 }
-.btn{
+
+.btn {
     display: block;
     justify-content: center;
     padding: 10px;
-} 
-    
-    
-.color-btn-card{
+}
+
+.color-btn-card {
     color: white;
     font-weight: bold;
 }
 
-h5{
+h5 {
     font-weight: bold;
-}
-h5:hover{
-    color:#4ED957;
-}
-h4{
-    color:#4ED957;
-    font-weight: bold;
-    
 }
 
+h5:hover {
+    color: #4ED957;
+}
