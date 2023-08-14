@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "img":"./img/blusa flor roja.png",
+        "img":"./img/vestido blanco.png",
         "Informacion": "$2,700",
-        "name":"Vestido, rojo carmsí",
+        "name":"Nubes, mar y cielo, Vestido de fibra de algodón con bordado inspirado en las flores endemicas de Oaxaca",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -13,7 +13,7 @@
         "id": 2,
         "img":"./img/blusa flores rosas.png",
         "Informacion": "$2,700",
-        "name":"Atuendo típico Oaxaqueño",
+        "name":"La flor del cielo es el nombre de la flor de la cual las artesanas se inspiraron en este conjunto de falda y blusa bordada a mano",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -24,7 +24,7 @@
         "id": 3,
         "img":"./img/vestido rojo.png",
         "Informacion": "$2,300",
-        "name":"Blusa y falda",
+        "name":"Pintame el corazón. Cconjunto de falda y blusa bordada a mano",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -34,7 +34,7 @@
         "id": 4,
         "img":"./img/blusa rosa.png",
         "Informacion": "$1,700",
-        "name":"Blusa, rosa mexicano ",
+        "name":"Poema de primavera. Blusa rosa bordada a mano con hilos teñidos con minerales, raices, verduras de la región",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -44,7 +44,7 @@
         "id": 5,
         "img": "./img/vestido blanco.png",
         "Informacion": "$1,500",
-        "name":"Vestido, mantita",
+        "name":"",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -54,7 +54,7 @@
         "id": 6,
         "img":"./img/blusa blanca con azul.png",
         "Informacion": "$2,700",
-        "name":"Atuendo típico, azul",
+        "name":"Mi cielo. Conjunto de falda y huipil bordado con hilo de algodón agroecológico cultivado en la región",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -64,7 +64,7 @@
         "id": 7,
         "img":"./img/blusa amarilla.png",
         "Informacion": "$1,700",
-        "name":"Blusa, solecito",
+        "name":"Girasole. Blusa amarilla bordada a mano cno hilo teñido con curcúma",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -74,7 +74,7 @@
         "id": 8,
         "img":"./img/huipil.png",
         "Informacion": "$2,700",
-        "name":"Atuendo típico, siempre Otoño",
+        "name":"En las raíces. Huipil bordado a mano y falda teñida con flores y hongos",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -84,7 +84,7 @@
         "id": 9,
         "img":"./img/huipil negro.png",
         "Informacion": "$1,700",
-        "name":"Blusa, negro es mejor",
+        "name":"Vida. Huipil color negro bordado a mano",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
@@ -94,7 +94,7 @@
         "id": 10,
         "img":"./img/vestido negro.png",
         "Informacion": "$2,700",
-        "name":"Vestido, negro azabache",
+        "name":"Mi bella Oaxaca. Vestido largo bordado a mano inpirado en la creatividad de lo primeros bordados hechos por mujeres en Oaxaca",
         "precio": 700,
         "cantidad": 1,
         "categoria": "blusa artesanal"
