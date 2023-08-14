@@ -75,3 +75,15 @@ h5 {
 h5:hover {
     color: #4ED957;
 }
+
+#nav1{
+    padding: 10px 0px;
+}
+
+#footer1{
+  padding: 10px 0px;  
+}
+
+#titulo{
+    padding: 5px 0px;
+}
