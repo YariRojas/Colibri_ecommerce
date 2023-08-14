@@ -3,7 +3,7 @@ body {
 	/*background:linear-gradient(30deg, rgb(236, 252, 241),rgb(188, 255, 214), rgb(137, 252, 181), rgb(76, 255, 121));*/
 	   
     line-height: 1em;
-	font-family:Raleway;
+	font-family: 'Raleway';
 } 
 
 /*---CONTACTO---*/
@@ -13,6 +13,18 @@ body {
 }
 
 /*--FORMULARIO--*/
+
+
+.formulario-container{
+	background-image:url("/img/fondocolibri.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	font-family: 'Raleway';
+}
+
+.card {
+	border:none;
+}
 
 label{
 	margin-top: 10px;
@@ -26,6 +38,8 @@ form{
 	 flex-direction: column;
 	 justify-content: center;
 	 align-items: center;
+	 font-family: 'Raleway';
+
    }
 
    form .input1 {
@@ -53,9 +67,12 @@ textarea{
 	
 }
 
-.btn-btn-primary{
-	background-color: hsl(135, 55%, 60%);
-	border-radius: 50px;
+.btn.btn-primary{
+
+	width: 150px;
+	height: 50px;
+	letter-spacing: 1px;
+	font-size: 13px;
 	
 }
 
