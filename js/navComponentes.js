@@ -2,81 +2,92 @@ let navbar = document.getElementById("nav1");
 let footer = document.getElementById("footer1");
 
 navbar.insertAdjacentHTML("afterbegin", `
-<nav class="navbar ">
-        <a href="javascript:void(0);" class="navbar-toggler-icon" onclick="myFunction()">
-        </a>
-        <div class="img-container">
-            <img src="./img/LOGO.png" alt="Logo" class="logoC">
-        </div>
-        <div class="enlaces-container" style="text-align: center;" id="enlacesNav">
-        </div>
-        <div class="login-container" style=" text-align: center;" id="botonesNav">
-        </div>
-        <div class="navlinksContainer" id="containerDivlinks" style="display: none;">
-            <a href="./productos.html">PRODUCTOS</a>
-            <a href="./nosotros.html">NOSOTROS</a>
-            <a href="./contacto.html">CONTÁCTANOS</a>
-        </div>
-        <div class="topnav" id="topnav" style="border: none;">
-            <div id="myLinks">
-                <a href="./index.html">INICIO</a>
-                <a href="./productos.html">PRODUCTOS</a>
-                <a href="./nosotros.html">NOSOTROS</a>
-                <a href="./contacto.html">CONTÁCTANOS</a>
-            </div>
-        </div>
-    </nav>`);
+<!--NAVBAR-->
+  <div class="contenedor">
+    <img src="./img/LOGO.png" alt="Imagen Centrada">
+  </div>
+  <nav class="nav">
+    <button class="nav-toggle" aria-label="">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="./index.html" class="nav-menu-link nav-link">INICIO</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="./productos.html" class="nav-menu-link nav-link">CATÁLOGO</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="./nosotros.html" class="nav-menu-link nav-link">NOSOTROS</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="./contacto.html" class="nav-menu-link nav-link ">CONTÁCTANOS</a>
+      </li>
+    </ul>
+    <div class="icon">
+      <a href="#"><img src="./img/carrito-de-compras-unscreen.gif" alt="Icono 1"></a>
+      <a href="./login.html"><img src="./img/vista-de-calle-unscreen.gif" alt="Icono 2"></a>
+    </div>
+  </nav>
+  <script>
+  const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+});
+</script>
+  `);
 
 footer.insertAdjacentHTML("beforeend", `
-
-    
-<div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top"></div>
-<div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-5 col-md-6 mb-4">
-          <h4>DIRECTORIO</h4>
-          
-          <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href=""./index.html" class="nav-link p-0 text-muted">INICIO</a></li>
-
-          <li class="nav-item mb-2"><a href="./productos.html" class="nav-link p-0 text-muted">PRODUCTOS</a></li>
-
-          <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">NOSOTROS</a></li>
-
-          <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted">CONTÁCTANOS</a></li>
-
-          <li class="nav-item mb-2"><a href="./login.html" class="nav-link p-0 text-muted">SUSCRÍBETE</a></li>
-        </ul>
-        </div>
-        
-        
-        
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-          <form>
-            <h5>Suscribete a nuestro newsletter</h5>
-            <p>¡Recibe las mejores ofertas!</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Ingresa tu email</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Ingresa tu email">
-              <button class="btn btn-primary" type="button">Suscribirme</button>
+     <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>COLIBRÍ.co</h1>
+                <p>¡Lo mejor de México, para ti!</p>
+                <div id="footer_social_media">
+                    <img src="./img/instagram.png" href="https://www.instagram.com/" class="footer-link" id="instagram">
+                    <img src="./img/facebook.png" href="https://www.facebook.com/" class="footer-link" id="facebook">
+                    <img src="./img/gorjeo.png" href="https://www.twitter.com/" class="footer-link" id="twitter">
+                </div>
             </div>
-          </form>
+            <ul class="footer-list">
+                <li>
+                    <h3>DIRECTORIO</h3>
+                </li>
+                <li><a href="./index.html" class="footer-link">INICIO</a></li>
+                <li><a href="./nosotros.html" class="footer-link">NOSOTROS</a></li>
+                <li><a href="./productos.html" class="footer-link">CATÁLOGO</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>CONTÁCTANOS</h3>
+                </li>
+                <li><a href="./login.html" class="footer-link">REGÍSTRATE</a></li>
+                <li><a href="./login.html" class="footer-link">MI CUENTA</a></li>
+                <li><a href="formularioProductos.html" class="footer-link">ADMINISTRADOR</a></li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Suscribete a nuestro newsletter</h3>
+                <p>¡Recibe las mejores ofertas!</p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" href="./login.html"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <div class="container text-center">
-            <p>&copy; 2023 COLIBRÍ. Todos los derechos reservados.</p>
+        <div id="footer_copyright">
+            &#169 COLIBRÍ. Todos los derechos reservados.
         </div>
-      </div>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>`);
+    </footer>`);
 
 let enlacesNav = document.getElementById("enlacesNav");
 let botonesNav = document.getElementById("botonesNav");

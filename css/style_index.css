@@ -1,77 +1,259 @@
    /*CARRUSEL DE PRODUCTOS*/
-body{
- /* background-color: rgb(255, 235, 208);*/
- /*   background:linear-gradient(30deg, rgb(236, 252, 241),rgb(188, 255, 214), rgb(137, 252, 181), rgb(76, 255, 121));*/
-}
-  .carousel{
-    max-width: 800px;
-    margin: auto;
-  }
-  .carousel-inner{
-    width: 100%;
-    
-    max-height: 500px;
-  }
+
+   .slider-centrado {
+     width: 80%;
+     height: 60vh;
+     border-radius: 0%;
+     background-image: url(../img/109.jpg);
+     background-size: cover;
+     background-position: center;
+     animation: slide 3s infinite;
+     margin: 2em auto 1em;
+   }
+
+   @keyframes slide {
+     25% {
+       background-image: url(../img/109.jpg);
+     }
+
+     50% {
+       background-image: url(../img/COLECCION3.jpg);
+     }
+
+     100% {
+       background-image: url(../img/mxcity.mx_ethnic-mexican-dresses-google-search.png);
+     }
+   }
 
 
- 
+   /*CARRUSEL NUEVOS MODELOS*/
 
-/*CARRUSEL DE OFERTAS*/
+   .titulo {
+     margin: 25px 1em 25px auto;
+     width: 100%;
+     text-align: center;
+     color: #4ED957;
+     font-family: 'Raleway';
+   }
 
-   body {
-    margin: auto;
-  }
-  
-  .carrusel {
-    height: 500px;
+   .carrusel {
+     width: 80%;
+     height: 300px;
+     display: flex;
+     align-items: center;
+     margin: 0 auto 4em auto;
+   }
+
+   .carrusel-items {
+     display: flex;
+     overflow-x: hidden;
+     overflow-y: hidden;
+   }
+
+   .carrusel-item {
+     min-width: 250px;
+     max-width: 300px;
+     height: 340px;
+     cursor: pointer;
+   }
+
+   .carrusel-item img {
+     width: 300%;
+     height: 100%;
+   }
+
+   .carrusel-item:hover {
+     transform: scale(1.3);
+   }
+
+
+
+   /*OFERTAS*/
+
+   .boton {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 50px;
+     background-color: #0D51D9;
+     color: white;
+     cursor: pointer;
+     transition: 0.3s ease;
+   }
+
+   .boton:hover {
+     background-color: #4ED957;
+   }
+
+   .card-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+     flex-wrap: wrap;
+   }
+
+   .card {
+     width: 250px;
+     height: auto;
+     position: relative;
+     background: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 4px;
+     padding: 20px;
+     transition: all .3s ease-in;
+   }
+
+   .card>* {
+     padding: 10px;
+   }
+
+   .card .card-image {
+     height: 250px;
+     width: 150px;
+     border-radius: 25px;
+
+     background-position: center center;
+     background-size: cover;
+   }
+
+   .card .card-title {
+     padding: 20px 10px 5px 10px;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     color: #4ED957;
+     text-align: center;
+
+   }
+
+   .card:nth-child(1) .card-image {
+     background-image: url(../img/blusa\ blanca\ con\ azul.png);
+   }
+
+   .card:nth-child(2) .card-image {
+     background-image: url(../img/vestido\ rojo.png);
+   }
+
+   .card:nth-child(3) .card-image {
+     background-image: url(../img/huipil.png);
+   }
+
+   .card:hover {
+     background: white;
+     color: #0D51D9;
+     box-shadow: 0px 0px 11px 5px #4ED957;
+
+   }
+
+   .card .card-text {
+     line-height: 20px;
+     font-size: 400;
+     text-align: center;
+     color: #0D51D9;
+   }
+
+
+
+
+
+
+   /*RESEÑAS*/
+
+   .star {
+     width: 30px;
+     height: auto;
+   }
+
+   .tarjeta-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-  }
-  
-  .carrusel-items {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 100px 0px;
-  }
-  
-  .carrusel-item {
-    min-width: 250px;
-    max-width: 20px;
-    height: 350px;
-    cursor: pointer;
-  }
-  
-  .carrusel-item img {
-    width: 100%;
-    height: 100%;
-
-  }
-  
-  .carrusel-item:hover {
-    transform: scale(1.2);
+    gap: 15px;
+    flex-wrap: wrap;
   }
 
-  /*RESEÑAS*/
-  .responsive-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 150px; 
-  }
+   .tarjeta {
+     position: relative;
+     width: 250px;
+     height: 250px;
+     margin: 4px 2em 4px 2em;
+   }
 
-  .card-body{
-    color: #0a0a0a;
-  }
+   .tarjeta .face {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+     border-radius: 120px;
+     overflow: hidden;
+     transition: .5s;
+   }
 
-  .l-icon{
-    color: #0e0d0d;
-  }
+   .tarjeta .front {
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px #4ED957	;
+   }
 
-.feature-icon {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 1rem;
-}
+   .tarjeta .front img {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
 
+   .tarjeta .front h3 {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 50px;
+     line-height: 45px;
+     color:white;
+     background:#4ED957	;
+     text-align: center;
+     font-size: 15px;
+     
+   }
 
+   .tarjeta .back {
+     transform: perspective(600px) rotateY(180deg);
+     background:#0D51D9	;
+     padding: 50px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     box-shadow: 0 5px 10px black;
+     font-size: 12px;
+   }
+
+   .tarjeta .back .link {
+     border-top: solid 1px white;
+     height: 50px;
+     line-height: 50px;
+   }
+
+   .tarjeta .back .link a {
+     color: #f3f3f3;
+   }
+
+   .tarjeta .back h3 {
+     font-size: 12px;
+     margin-top: 80px;
+     letter-spacing: 2px;
+   }
+
+   .tarjeta .back p {
+     letter-spacing: 1px;
+   }
+
+   .tarjeta:hover .front {
+     transform: perspective(600px) rotateY(180deg);
+   }
+
+   .tarjeta:hover .back {
+     transform: perspective(600px) rotateY(360deg);
+   }

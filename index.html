@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!--METADATA-->
   <meta charset="utf-8">
@@ -8,7 +9,8 @@
   <link rel="icon" type="image/x-icon" href="img/colibri.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style_navbar&footer.css">
+  <link rel="stylesheet" href="./css/style_navbar.css">
+  <link rel="stylesheet" href="./css/style_footer.css">
   <link rel="stylesheet" href="./css/style_index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,32 +18,13 @@
 </head>
 
 <body>
-  <header id="nav1">
-  </header>
+  <header id="nav1"> </header>
 
   <!--CARRUSEL DE PRODUCTOS*/-->
-  <br>
-  <br>
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/flor2.png" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/flor5.png" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/flor4.png" class="d-block w-100">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    </button>
-  </div>
+  <div class="slider-centrado"> </div>
 
-  <!--CARRUSEL DE OFERTAS*/-->
-  <!--Falta agregar el alt a imagenes-->
+  <!--CARRUSEL NUEVOS MODELOS-->
+  <h1 class="titulo">NUEVOS MODELOS</h1>
   <div class="carrusel">
     <div class="carrusel-items">
       <div class="carrusel-item">
@@ -98,81 +81,126 @@
     </div>
   </div>
 
+  <!--OFERTAS-->
+  <h1 class="titulo">OFERTAS</h1>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image"></div>
+      <div class="card-title">Conjunto Mares</div>
+      <div class="card-text">
+        Conjunto unitalla 100% de lino, bordado artesanalmente a maquina de pedal.
+        <br>
+        <br>
+        <button class="boton" href="./productos.html">COMPRAR</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image"></div>
+      <div class="card-title">Conjunto Fuego</div>
+      <div class="card-text">
+        Conjunto de lino rojo bordado a maquina de pedal, con deshilado, de tirantes y resorte en la parte del busto.
+        <br>
+        <br>
+        <button class="boton" href="./productos.html">COMPRAR</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image"></div>
+      <div class="card-title">Conjunto Tierra</div>
+      <div class="card-text">Conjunto de lino con viscosa marrón bordada a máquina de pedal, al tono con detalles
+        deshilados.
+        <br>
+        <br>
+        <button class="boton" href="./productos.html">COMPRAR</button>
+      </div>
+    </div>
+  </div>
+
   <!--RESEÑAS*/-->
-  <section class="container">
-    <h2>Los de la semana:</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./img/carru5.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">BLUSA BORDADA</h5>
-            <p class="card-text">Blusa suelta con manga 3/4 bohemia y ligera. </p>
-           
-          </div>
-        </div>
+  <h1 class="titulo">RESEÑAS</h1>
+  <div class="tarjeta-container">
+    <div class="tarjeta">
+      <div class="face front">
+        <img src="./img/reseña1.jpg" alt="">
+        <h3>SARA MARTÍNEZ</h3>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./img/florr.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">BLUSA CAMPESINA</h5>
-            <p class="card-text">Suave y excelente transpirabilidad</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="./img/florrr.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">VESTIDO BORDADO</h5>
-            <p class="card-text">Color floral bordado con cuello cuadrado.</p>
-           
-          </div>
+      <div class="face back">
+        <p>Excelente servicio y las prendas no se diga, son hermosas. Recomendable 100%.</p>
+        <div class="link">
+          <img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif"
+            alt=""><img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star"
+            src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif" alt="">
         </div>
       </div>
     </div>
-  </section>
-  <section class="container mt-5">
-    <h2>¿Por qué elegir Colibrí?</h2>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <div class="feature-icon">
-          <img src="./img/entregarapida.png" alt="" width="150px" height="300px" class="responsive-image">
-        </div>
-        <div class="l-icon">
-          <h2>"Las tres prendas que compré están divinas, los diseños me encantaron, la tela que utilizan está increíble, súper fresca y cómoda. ¡El envío fue rapídisimo! Gracias por ayudarme a sorprender a mi mamá, dos de las prendas fueron un regalo de cumpleaños para ella y quedó fascinada con su vestido y su blusa. ¡Muchas gracias! Sin duda, volvería a comprar en Colibrí"</h2>
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <h4>Valeria</h4>
+    <div class="tarjeta">
+      <div class="face front">
+        <img src="./img/reseña2.jpg" alt="">
+        <h3>MÓNICA ANZUREZ</h3>
       </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="feature-icon">
-          <img src="./img/calidad.png" alt="" width="150px" height="300px" class="responsive-image">
+      <div class="face back">
+        <p>Mi vestido es encantador y de excelente calidad, me encantó poder hacer esta compra, el envío es rápidisimo.
+        </p>
+        <div class="link">
+          <img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif"
+            alt=""><img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star"
+            src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif" alt="">
         </div>
-        <div class="l-icon">
-          <h2>"Me encantó la blusa que pedí, la entrega fue rápida y la atención que tienen con el cliente también!!!"</h2>
-          <h3>⭐⭐⭐⭐⭐</h3>
-          <h4>Camila</h4>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="feature-icon">
-          <img src="./img/catalogo.png" alt="" width="150px" height="300px" class="responsive-image">
-        </div>
-        <div class="l-icon">
-        <h3>Variedad en el catalogo</h3>
-        <p>Ofrecemos una amplia variedad para satisfacer todos los gustos.</p>
       </div>
     </div>
-    
+    <div class="tarjeta">
+      <div class="face front">
+        <img src="./img/reseña3.jpg" alt="">
+        <h3>CLAUDIA GUERRERO</h3>
+      </div>
+      <div class="face back">
+        <p>Fue mi primer pedido y llego super rápido, quede encantada con mi blusa, todo muy bonito y la tela excelente.
+        </p>
+        <div class="link">
+          <img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif"
+            alt=""><img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star"
+            src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif" alt="">
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="tarjeta">
+      <div class="face front">
+        <img src="./img/reseña4.jpg" alt="">
+        <h3>LAURA PONCE</h3>
+      </div>
+      <div class="face back">
+        <p>¡El envío fue muy rápido y la ropa super bonita y de excelente calidad!</p>
+        <div class="link">
+          <img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif"
+            alt=""><img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star"
+            src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="tarjeta">
+      <div class="face front">
+        <img src="./img/reseña5.jpg" alt="">
+        <h3>GABRIELA LARA</h3>
+      </div>
+      <div class="face back">
+        <p>La ropa es de calidad y los colores hermosos. Definitivamente volveré a comparar con ustedes.</p>
+        <div class="link">
+          <img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif"
+            alt=""><img class="star" src="./img/favorito-unscreen.gif" alt=""><img class="star"
+            src="./img/favorito-unscreen.gif" alt=""><img class="star" src="./img/favorito-unscreen.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <br>
   <br>
   <br>
   <br>
+
 
   <div id="footer1">
   </div>
@@ -181,5 +209,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
+
 </html>
