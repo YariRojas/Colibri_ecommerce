@@ -7,12 +7,14 @@
 }
 
 #titulo {
+    background: linear-gradient(90deg, #82fa8a, #6697fa);
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px 3px rgb(54, 91, 253);
+    text-align: center;
     font-size: 2.5rem;
     font-family: 'Raleway', cursive;
     color: #0d51d9;
     padding: 10px;
-    text-align: center;
-    
 }
 
 .card {
@@ -34,7 +36,8 @@
 
 .card img {
     width: 100%;
-    height: 400px;
+    height: auto;
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -83,4 +86,11 @@ h5:hover {
 
 #titulo{
     padding: 5px 0px;
+}
+
+/* Media Query para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }

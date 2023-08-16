@@ -1,21 +1,68 @@
-/*titulo*/
-h1 {
-    font-size: 2.5rem;
-    font-family: 'Raleway', cursive;
-    background-color: hsl(135, 55%, 60%);
-    background: linear-gradient(90deg, #09fa96, #0516fa);
-    padding: 10px;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 3px 3px rgb(33, 29, 238);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+.card-body{
+  background: linear-gradient(90deg, #82fa8a, #6697fa);
+  height: 400px;
+  box-shadow: 1px 1px 3px 3px rgb(40, 79, 253);
+}
 
-/*cambia el color del borde*/
-.form-control {
-    border-color:hsl(236, 94%, 46%);
-	border-radius: 50px;
-    box-shadow: 1px 1px 4px 4px hsl(135, 55%, 60%);
-	margin: 10px 10px 17px 10px;
-  }
+.form-control{
+  height: 50px;
+}
+
+
+.card-header{
+  border-radius: 100px;
+  box-shadow: 1px 1px 3px 3px rgb(40, 79, 253);
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Raleway', cursive;
+  font-size: medium;
+  color: #0e59f0;
+  
+  text-align: center;
+}
+
+
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-file-label {
+  background-color: #2068fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-file-label:hover {
+  background-color: #45a049;
+}
+
+.custom-file-input:focus + .custom-file-label {
+
+  border-color: #009688;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.25);
+}
+
+.custom-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #45a049;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 150, 136, 0.25);
+}

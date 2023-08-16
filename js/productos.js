@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const productList = document.getElementById('shopContent');
 
     // Obtener productos del Local Storage
@@ -37,10 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>`;
         return element;
     }
-
-       
     
-
 function getData(){
     let promesa = fetch("data.json",{
             method:"GET"
