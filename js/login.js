@@ -63,8 +63,6 @@ botonCrear.addEventListener("click", function (event) {
     }, 10000);
 
     if (validarNombre() == true && validarCorreo() == true && validarNumero() == true && validarContrasena() == true) {
-        
-        
         let usuario = `{
             "IdNombre": "${IdNombre.value}", 
             "correo": "${correo.value}", 
@@ -74,9 +72,6 @@ botonCrear.addEventListener("click", function (event) {
         if (validarUsuarioRegistrado(correo.value)) {
             arrayUsuarios.push(JSON.parse(usuario));
             localStorage.setItem("arrayUsuarios", JSON.stringify(arrayUsuarios));
-            NombreErrores = "<li>Este correo se registro exitosamente.</li>";
-            alertErrorLogin.style.display = "block";
-            alertErrorTextoLogin.insertAdjacentHTML("beforeend", NombreErrores);
         }else{
             NombreErrores = "<li>Este correo ya está registrado.</li>";
             alertErrorLogin.style.display = "block";
@@ -89,7 +84,7 @@ botonCrear.addEventListener("click", function (event) {
 });
 function validarNombre() {
     nombreValido = true;
-    if (/^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+([A-Za-zÑñÁáÉéÍíÓóÚú]{3,40}\s*)))*$/.test(IdNombre.value) == false) {
+    if (/^[a-zA-Z ]+$/.test(IdNombre.value) == false) {
         IdNombre.style.border = "solid thin red";
         nombreValido = false;
     } else {
@@ -130,7 +125,21 @@ function validarContrasena() {
     }//if else
 }//validarContrasena
 
+//Al menos una letra mayuscula, una minuscula, un número y que sea minimo de 8 digitos
+/*/function confirmarContra () {
+    console.log(contraseña.value);
+    console.log(ConfiContraseña.value);
+    if ((contraseña.value !== ConfiContraseña.value)) {
+        ConfiContraseña.style.border = "solid thin red";
+    } else {
+        ConfiContraseña.style.border = "solid thin green";
+        return true;
+    }//if else
+}// confirmarContra*/
 
+function validarDireccion(params) {
+
+}
 IdNombre.addEventListener("blur", function (event) {
     event.preventDefault;
     IdNombre.value = IdNombre.value.trim();

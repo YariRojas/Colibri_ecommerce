@@ -1,117 +1,97 @@
-body { 
-	/* background-color: rgb(255, 235, 208);*/
-	/*background:linear-gradient(30deg, rgb(236, 252, 241),rgb(188, 255, 214), rgb(137, 252, 181), rgb(76, 255, 121));*/
-	   
-    line-height: 1em;
-	font-family: 'Raleway';
-} 
-
-/*---CONTACTO---*/
-
-.contacto{
-	text-align: center;
-}
-
-/*--FORMULARIO--*/
-
-
-.formulario-container{
-	background-image:url("/img/fondocolibri.jpg");
-	background-size: cover;
-	background-repeat: repeat;
+body {
+	line-height: 1em;
 	font-family: 'Raleway';
 }
 
-.card {
-	border:none;
-}
-.text-center{
-	color: #4ED957;
+.grid-container {
+	box-sizing: border-box;
+	padding: 3px;
+	margin: 5px;
+	margin-left: 12px;
+
 
 }
-label{
-	margin-top: 10px;
-	margin-bottom: 8px;
+
+body {
+	min-height: 100%;
+	background-image: url(../img/loginfondo.jpg);
+}
+
+.form-control {
+	text-align: left;
+	font-size: 12px;
+}
+
+.ingr {
 	text-align: center;
-	
+	color: #4ed957;
 }
 
-form{
-	display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 align-items: center;
-	 font-family: 'Raleway';
-
-   }
-
-   form .input1 {
-	width: 90%;
-	margin: 0.5rem;
-  }
-
-
-.form-control{
-	border-color:hsl(135, 55%, 60%);
-	border-radius: 20px;
-	margin: 0px 0px 17px 0px;
-	
-} /*cambia el color del borde*/
-
-.form-row{
-	margin:40px;
+.tituloLog {
+	color: #4ed957;
 }
 
-textarea{
-	width:100%;
-	height:100px;
-	line-height:250%;
-	resize:none;
-	
+.form-label {
+	color: #0d51d9;
+	font-size: 16px;
 }
 
-.btn.btn-primary{
+/*VistaCelular*/
+@media(max-width: 899px) {
+	.login-container {
+		grid-area: login-container;
+		padding-right: 5%;
+	}
 
-	width: 150px;
-	height: 50px;
-	letter-spacing: 1px;
-	font-size: 11px;
-	
+
+	.registrate {
+		grid-area: registrate;
+		padding: 50px;
+	}
+
+	.ingresar {
+		grid-area: ingresar;
+		padding: 50px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-columns: auto;
+		grid-template-areas:
+			'registrate'
+			'ingresar';
+		gap: 0px;
+		height: 100%;
+	}
+
+	.enlaces-container {
+		display: none;
+	}
+
 }
 
-/*Responsividad*/
+/*Escritorio*/
+@media(min-width:900px) {
+	.registrate {
+		grid-area: registrate;
+		padding: 50px;
+	}
 
-#formu{
-	display: flex;
-	justify-content: flex-start
+	.ingresar {
+		grid-area: ingresar;
+		padding: 50px;
+	}
 
- }
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			'registrate ingresar'
+			'registrate  ingresar';
+		gap: 0px;
+		height: 100%;
+	}
 
- #contac{
-	display: flex;
-	justify-content: flex-end;
-
- }
-
-.oaxaca-img{
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
 }
-
-.ropa-img{
-	width: 80%;
-	height: 80%;
-	object-fit: contain;
-	margin-left: 100px;
-}
-
-#contenedor {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-  }
-  
-  #contenedor > div {
-	width: 50%;
-  }
