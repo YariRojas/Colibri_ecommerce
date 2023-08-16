@@ -13,62 +13,37 @@
   <link rel="stylesheet" href="./css/style_navbar.css">
   <link rel="stylesheet" href="./css/style_footer.css">
   <link rel="stylesheet" href="./css/style_login.css">
+ 
 </head>
 
 <body>
   <header id="nav1"></header>
 
- <!--Formulario-->
- <div class="registrate">
-
-  <h1 class="tituloLog">Regístrate</h1>
-
-  <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertErrorLogin">
-      <p id="alertErrorTextoLogin"> </p>
-  </div>
-  <form class="col">
-      <div class="row-md-6">
-          <br>
-          <label class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="IdNombre">
-      </div>
-
-      <div class="row-md-6">
-          <br>
-          <label class="form-label">Correo</label>
-          <input type="text" class="form-control" id="Correo">
-      </div>
-
-      <div class="row-md-6" style="padding-top: 25px;">
-          <label class="form-label">Numero de teléfono</label>
-          <input type="input" class="form-control" id="campNumber">
-      </div>
-
-      <div class="row-md-6" style="padding-top: 25px;">
-          <label class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="Contraseña">
-      </div>
-      <div class="row-md-6" style="padding-top: 25px;">
-          <label class="form-label">Confirmar tu contraseña</label>
-          <input type="password" class="form-control" id="ConfiContraseña">
-      </div>
-
-      <div class="row-12" style="padding-top: 25px;">
-          <button type="add" class="btn btn-primary" id="botonCrear">Regístrate</button>
-      </div>
-  </form>
-</div>
-<div class="ingresar">
-  <div class="shadow p-3 mb-5 bg-white rounded">
-      <h2 class="ingr">INGRESAR</h2>
+  
+  <div class="container">
+    <div class="row contacto">
+        <div class="col-md-6">
+            <div >
+             
+              <img class="oaxaca-img" src="img/alebrijes-oaxaca.jpg" alt="representación de Oaxaca" > 
+            </div>
+        </div>
+        <div class="col-md-6 mapaMT">
+            <h1 class="text-center">Inicio de sesión</h1>
+         
       <br>
       <label class="form-label">Correo</label>
       <input type="email" class="form-control" placeholder="Ingresa tu correo" id="correoLogin">
       <div class="contraseña">
           <label class="form-label" style="padding-top: 25px;">Contraseña</label>
           <input type="password" class="form-control" placeholder="Contraseña" id="contraseñaLogin">
-          <p class="ingr" style="padding-top: 10px;">¿OLVIDASTE TU CONTRASEÑA
-          <p>
+          <!-- <p class="ingr" style="padding-top: 10px;">¿OLVIDASTE TU CONTRASEÑA?
+          <p> -->
+
+            <a href="./formularioRegistroUsuario.html">Regístrate</a>
+            <br>
+            <br>
+            <br>
           <div class="col-12">
               <button type="add" class="btn btn-primary" id="botonIngresar">INGRESAR</button>
           </div>
@@ -76,8 +51,10 @@
               <p id="errorLoginTexto"> </p>
           </div>
       </div>
-  </div>
+        </div>
+    </div>
 </div>
+
   
   <div id="footer1"></div>
 <script src="./js/login.js"></script>
