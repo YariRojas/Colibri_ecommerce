@@ -79,8 +79,8 @@ function getData(){
                         <h5 class="card-title"> ${prod.name}</h5>
                         <br>
                         
-                        <h4>${prod.Informacion.slice(0,80)}</h4>
-                        </br>
+                        <h6>${prod.descripcion}</h6>
+                        <h5 class="card-title"> ${prod.precio}</h5>
                           <!--Boton card-->
                           <button type="button" class="btn color-btn-header color-btn-card" >
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
