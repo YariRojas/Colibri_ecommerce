@@ -2,12 +2,11 @@ let navbar = document.getElementById("nav1");
 let footer = document.getElementById("footer1");
 
 navbar.insertAdjacentHTML("afterbegin", `
-<!--NAVBAR-->
   <div class="contenedor">
     <img src="./img/LOGO.png" alt="Imagen Centrada">
   </div>
   <nav class="nav">
-    <button class="nav-toggle" aria-label="">
+    <button class="nav-toggle" aria-label="">MENÚ
       <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-menu">
@@ -28,22 +27,7 @@ navbar.insertAdjacentHTML("afterbegin", `
       <a href="#"><img src="./img/carrito-de-compras-unscreen.gif" alt="Icono 1"></a>
       <a href="./login.html"><img src="./img/vista-de-calle-unscreen.gif" alt="Icono 2"></a>
     </div>
-  </nav>
-  <script>
-  const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
-
-  if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
-});
-</script>
-  `);
+  </nav>`);
 
 footer.insertAdjacentHTML("beforeend", `
      <footer>
@@ -74,10 +58,10 @@ footer.insertAdjacentHTML("beforeend", `
                 <li><a href="formularioProductos.html" class="footer-link">ADMINISTRADOR</a></li>
             </ul>
             <div id="footer_subscribe">
-                <h3>Suscribete a nuestro newsletter</h3>
+                <h3>¡Suscríbete a nuestro boletín!</h3>
                 <p>¡Recibe las mejores ofertas!</p>
-                <div id="input_group">
-                    <input type="email" id="email">
+                <div id="input_group" class="texto">
+                    <input  type="email" id="email" class="email">
                     <button>
                         <i class="fa-regular fa-envelope" href="./login.html"></i>
                     </button>
@@ -89,38 +73,15 @@ footer.insertAdjacentHTML("beforeend", `
         </div>
     </footer>`);
 
-let enlacesNav = document.getElementById("enlacesNav");
-let botonesNav = document.getElementById("botonesNav");
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-let enlaces = `<a href="./index.html" style="padding-left: 20px;">INICIO</a>
-                  <a href="./productos.html" style="padding-left: 20px;">PRODUCTOS</a>
-                  <a href="./nosotros.html" style="padding-left: 20px;">NOSOTROS</a>
-                  <a href="./contacto.html" style="padding-left: 20px;">CONTÁCTANOS</a>`
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
 
-let botones = `
-              <ul class="lista">
-                  <li>
-                      <a href="./login.html"><img src="./img/amigo.gif" alt="login" id="login"</a>
-                  </li>
-                  <li>
-                      <a href="./CarritoCompras.html"><img src="./img/carrito-de-compras.gif" alt="carrito" id="carrito"></a>
-                  </li>
-              </ul>`
-
-window.addEventListener("load", function (event) {
-  event.preventDefault;
-  enlacesNav.insertAdjacentHTML("beforeend", enlaces);
-  botonesNav.insertAdjacentHTML("beforeend", botones);
-});
-
-function myFunction() {
-  let topnav = document.getElementById("topnav");
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    topnav.style.height = "0";
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
   } else {
-    x.style.display = "block";
-    topnav.style.height = "100%";
+    navToggle.setAttribute("aria-label", "Abrir menú");
   }
-}
+});

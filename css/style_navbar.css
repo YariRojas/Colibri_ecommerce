@@ -19,8 +19,8 @@ body {
 /* Estilo para el logo */
 img {
     padding: 1%;
-    width: 320px;
-    height: 140px;
+    width: 300px;
+    height: 120px;
 }
 
 /* Estilos para los iconos */
@@ -83,15 +83,15 @@ img {
 
 /* TOGGLE */
 .nav-toggle {
-    background-color: #0D51D9;
+    background-color: #0d51d996;
     display: none;
     flex-direction: column;
     cursor: pointer;
     border-color: #0D51D9;
     padding: 5px 5px 15px 40px;
-
-
 }
+
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -102,17 +102,19 @@ img {
         margin: 100px;
         background-color: #F2F2F2;
         position: fixed;
-        top: 50px;
+        top: 70px;
         width: 80%;
-        padding: 10px 0;
+        padding: 10px 50px 20px;
         height: calc(30% - 50px);
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
+     
     }
 
     .nav-menu-item {
-        line-height: 50px;
+        line-height: 30px;
+        font-size: 13px;
     }
 
     .nav-menu-link:hover,
@@ -123,6 +125,17 @@ img {
 
     .nav-toggle {
         display: inline;
+        padding: 15px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        border-radius: 100px;
+
+        color: #ffffff;
+        transition: 0.5s;
+        cursor: pointer;
+         margin-left: 10px;
     }
 
     .nav-menu_visible {
