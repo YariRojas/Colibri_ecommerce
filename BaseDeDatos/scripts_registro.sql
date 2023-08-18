@@ -35,3 +35,12 @@ INSERT INTO `colibridb`.`usuarios` (`idUsuarios`, `nombre`, `correo`, `telefono`
 INSERT INTO `colibridb`.`usuarios` (`idUsuarios`, `nombre`, `correo`, `telefono`, `contraseña`) VALUES ('5', 'Ramiro', 'ramiro@gmail.com', '5590807060', 'Usuario123');
 
 
+-- tabal de lista de compras 
+
+-- lista de compra 
+INSERT INTO `colibridb`.`lista_decompra` (`idLista_decompra`, `cantidad`, `Productos_idProductos`, `Usuarios_idUsuarios`) VALUES ('1', '1', '5', '1');
+INSERT INTO `colibridb`.`lista_decompra` (`idLista_decompra`, `cantidad`, `Productos_idProductos`, `Usuarios_idUsuarios`) VALUES ('2', '1', '6', '2');
+INSERT INTO `colibridb`.`lista_decompra` (`idLista_decompra`, `cantidad`, `Productos_idProductos`, `Usuarios_idUsuarios`) VALUES ('3', '1', '7', '3');
+INSERT INTO `colibridb`.`lista_decompra` (`idLista_decompra`, `cantidad`, `Productos_idProductos`, `Usuarios_idUsuarios`) VALUES ('4', '1', '8', '4');
+INSERT INTO `colibridb`.`lista_decompra` (`idLista_decompra`, `cantidad`, `Productos_idProductos`, `Usuarios_idUsuarios`) VALUES ('5', '1', '9', '5');
+
