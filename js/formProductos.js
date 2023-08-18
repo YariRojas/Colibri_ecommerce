@@ -81,7 +81,7 @@ class UI {
 }//class UI
 
 //Dom Events
-document.getElementById('product-form').addEventListener('submit',function (e)  {
+document.getElementById('shopContent').addEventListener('submit',function (e)  {
   e.preventDefault()
     const name = document.getElementById("name").value;
     const price = document.getElementById("price").value;
@@ -115,7 +115,7 @@ document.getElementById('product-form').addEventListener('submit',function (e)  
     
 });//addEventListener
 
-document.getElementById("product-list").addEventListener("click", function (e) {
+document.getElementById("shopContent").addEventListener("click", function (e) {
   const ui = new UI ();
   ui.deleteProduct(e.target); 
 
