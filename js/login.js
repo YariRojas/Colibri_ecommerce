@@ -9,6 +9,10 @@ let correoValido = true;
 let nombreValido = true;
 let botonCrear = document.getElementById("botonCrear");
 let alertErrorTextoLogin = document.getElementById("alertErrorTextoLogin");
+let alertErrorLoginCorreo = document.getElementById("alertErrorLoginCorreo");
+let alertErrorTextoLoginCorreo = document.getElementById("alertErrorTextoLoginCorreo");
+let alertSuccessLogin = document.getElementById("alertSuccessLogin");
+let  alertSuccessTextoLogin = document.getElementById("alertSuccessTextoLogin");
 let alertErrorLogin = document.getElementById("alertErrorLogin");
 let errorLogin = document.getElementById("errorLogin");
 let errorLoginTexto = document.getElementById("errorLoginTexto");
@@ -21,6 +25,7 @@ botonCrear.addEventListener("click", function (event) {
     event.preventDefault();
     clearTimeout(idTimeout);
     alertErrorTextoLogin.innerHTML = "";
+    alertErrorTextoLoginCorreo.innerHTML= "";
     alertErrorLogin.style.display = "none";
     let NombreErrores = "Los siguientes campos deben ser llenados correctamente:<ul>";
 
@@ -42,7 +47,7 @@ botonCrear.addEventListener("click", function (event) {
 
 
     if (!validarNumero()) {
-        NombreErrores += "<li>Escribe un número válido.</li>";
+        NombreErrores += "<li>Escribe un télefono válido.</li>";
         alertErrorLogin.style.display = "block";
     } else {
         campNumber.style.border = "solid thin green";
@@ -50,7 +55,7 @@ botonCrear.addEventListener("click", function (event) {
 
 
     if (!validarContrasena()) {
-        NombreErrores += "<li>Escribe una contraseña válida.</li>";
+        NombreErrores += "<li>Escribe una contraseña válida. Debe tener mínimo 8 carácteres, contener por lo menos una letra mayuscula, una letra minuscula y al menos un dígito</li>";
         alertErrorLogin.style.display = "block";
     } else {
         contraseña.style.border = "solid thin green";
@@ -60,6 +65,8 @@ botonCrear.addEventListener("click", function (event) {
     alertErrorTextoLogin.insertAdjacentHTML("beforeend", NombreErrores);
     idTimeout = setTimeout(function () {
         alertErrorLogin.style.display = "none";
+        alertErrorLoginCorreo.style.display = "none";
+        alertSuccessLogin.style.display = "none";
     }, 10000);
 
     if (validarNombre() == true && validarCorreo() == true && validarNumero() == true && validarContrasena() == true) {
@@ -72,10 +79,14 @@ botonCrear.addEventListener("click", function (event) {
         if (validarUsuarioRegistrado(correo.value)) {
             arrayUsuarios.push(JSON.parse(usuario));
             localStorage.setItem("arrayUsuarios", JSON.stringify(arrayUsuarios));
+            NombreErrores = "<li>Este correo se registro exitosamente.</li>";
+            alertSuccessLogin.style.display = "block";
+            alertSuccessTextoLogin.insertAdjacentHTML("beforeend", NombreErrores);
         }else{
+            alertErrorTextoLoginCorreo.innerHTML= "";
             NombreErrores = "<li>Este correo ya está registrado.</li>";
-            alertErrorLogin.style.display = "block";
-            alertErrorTextoLogin.insertAdjacentHTML("beforeend", NombreErrores);
+            alertErrorLoginCorreo.style.display = "block";
+            alertErrorTextoLoginCorreo.insertAdjacentHTML("beforeend", NombreErrores);
             correo.style.border= "solid thin red";
             console.log("correo ya registrado");
         }
@@ -111,7 +122,7 @@ function validarNumero() {
     }// if else
 }// validarNumero
 function validarContrasena() {
-    if (/^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z]).{8,}$/.test(contraseña.value) == false) {
+    if ((/^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z]).{8,}$/.test(contraseña.value) == false) && (/^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z]).{8,}$/.test(ConfiContraseña.value) == false)) {
         contraseña.style.border = "solid thin red";
         ConfiContraseña.style.border = "solid thin red";
     } else {
@@ -120,8 +131,9 @@ function validarContrasena() {
             ConfiContraseña.style.border = "solid thin red";
         } else {
             ConfiContraseña.style.border = "solid thin green";
+            return true;
         }
-        return true;
+        
     }//if else
 }//validarContrasena
 
