@@ -1,0 +1,87 @@
+body {    
+    line-height: 1em;
+	font-family: 'Raleway';
+} 
+
+h1{
+	color: #4ed957;
+}
+
+/*---CONTACTO---*/
+
+.contacto{
+	text-align: center;
+}
+
+/*--FORMULARIO--*/
+
+
+.formulario-container{
+	font-family: 'Raleway';
+}
+
+.contactanos{
+	padding:30px;
+}
+
+label{
+	margin-top: 10px;
+	margin-bottom: 8px;
+	text-align: left;
+	color: #0d51d9;
+    font-size: 16px;
+	
+}
+
+form{
+	flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 font-family: 'Raleway';
+
+   }
+
+   .grid-container {
+	box-sizing: border-box;
+	padding: 3px;
+	margin: 25px;
+	margin-left: 12px;
+
+   }
+
+
+.form-control{
+	margin: 0px 0px 17px 0px;
+	text-align: left;
+	font-size: 12px;
+	
+} /*cambia el color del borde*/
+
+
+
+textarea{
+	width:100%;
+	height:100px;
+	line-height:150%;
+	resize:none;
+	
+}
+
+.btn.btn-primary{
+
+	width: 150px;
+	height: 35px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	
+}
+
+/*Responsividad*/
+
+
+ @media (max-width: 768px) {
+	/* Ajusta los estilos a pantallas de menor tamaño */
+	.mapaMT iframe {
+		width: 100%;
+	}
+}
