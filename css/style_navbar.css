@@ -109,7 +109,7 @@ img {
         overflow-y: auto;
         left: 100%;
         transition: left 0.3s;
-     
+        z-index: 1; 
     }
 
     .nav-menu-item {
