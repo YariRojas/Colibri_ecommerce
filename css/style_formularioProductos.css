@@ -3,8 +3,11 @@
   margin: 20px;
   font-weight: 300;
   color: #4ed957;
-  
+}
 
+.titulo {
+  color: #4ed957;
+  font-family: 'Raleway';
 }
 
 .form-productos {
@@ -23,6 +26,8 @@
   font-size: 20px;
 }
 
-.btnImg{
-  color: #000f01;
+.input {
+  text-align: left;
+  color: #0D51D9;
+  font-family: 'Raleway';
 }
