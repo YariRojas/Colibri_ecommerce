@@ -4,7 +4,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 #titulo {
@@ -14,7 +14,7 @@
     font-size: 2.5rem;
     font-family: 'Raleway', cursive;
     color: #4ED957;
-    padding: 10px;
+    padding: 4px;
 }
 
 .card {

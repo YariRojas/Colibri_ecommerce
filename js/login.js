@@ -55,7 +55,7 @@ botonCrear.addEventListener("click", function (event) {
 
 
     if (!validarContrasena()) {
-        NombreErrores += "<li>Escribe una contraseña válida. Debe tener mínimo 8 carácteres, contener por lo menos una letra mayuscula, una letra minuscula y al menos un dígito</li>";
+        NombreErrores += "<li>Escribe una contraseña válida. Debe tener mínimo 8 carácteres, contener por lo menos una letra mayúscula, una letra minúscula y al menos un dígito</li>";
         alertErrorLogin.style.display = "block";
     } else {
         contraseña.style.border = "solid thin green";

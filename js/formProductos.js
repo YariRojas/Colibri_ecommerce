@@ -1,11 +1,10 @@
-//elementos del html
-let txtNombreProducto = document.getElementById("txtNombreProducto");
-let txtDescriptionProducto = document.getElementById("txtDescriptionProducto");
-let txtPrecioProducto = document.getElementById("txtPrecioProducto"); // se declara variables
-let btnAgregar = document.getElementById("btnAgregar");
-let btnImg = document.getElementById("btnImg");
-let product_img = document.getElementById("product_img");
-let index = [];
+// Parámetros que necesitamos del producto
+class Product {
+  constructor(name, price, description){
+      this.name = name;
+      this.price = price;
+      this.description = description;
+      this.image =image; //"";
 
 let productos = [];
 
@@ -247,63 +246,3 @@ txtPrecioProducto.addEventListener("change", function (event) {
     }
 
 });
-
-
-product_img.addEventListener("load", function (event) {
-    event.preventDefault();
-    if (!product_img.src) {
-        if (!index.includes("imagen")) {
-            alertValidaImg.insertAdjacentHTML(
-                "afterbegin", ` Debe seleccionar una <strong>imagen</strong>.<br/> `);
-            alertValidaImg.style.color = "red";
-            alertImg.style.border = "solid thin red";
-            index.push("imagen");
-        }
-    } //if la imagen no se selecciona 
-    else {
-        //quitar alertas
-        alertValidaImg.innerHTML = "";
-        alertImg.style.display = "none";
-        product_img.style.border = "";
-        removeAllInstances(index, "imagen");
-    }
-    if (!product_img.src.match(/[^\s]+(.*?).(jpg|jpeg|png|JPG|JPEG|PNG)$/)) {
-        if (!index.includes("imagen")) {
-            alertValidaImg.insertAdjacentHTML(
-                "afterbegin", ` El formato de la <strong>imagen</strong> es incorrecto.<br/> `);
-            alertValidaImg.style.color = "red";
-            alertImg.style.border = "solid thin red";
-            index.push("imagen");
-        }
-    }//else if la imagen (formato) no cumple las validaciones  
-    else {
-        //quitar alertas
-        alertValidaImg.innerHTML = "";
-        alertImg.style.display = "none";
-        product_img.style.border = "";
-        removeAllInstances(index, "imagen");
-    }
-});
-
-//Remueve todas las instancias de un objeto dado (item) que se encuentre en el arreglo index
-function removeAllInstances(arr, item) {
-    for (var i = arr.length; i--;) {
-        if (arr[i] === item) arr.splice(i, 1);
-    }
-}
-
-function limpiarTodo() {
-    index = [];
-    txtNombreProducto.value = "";
-    txtDescriptionProducto.value = "";
-    txtPrecioProducto.value = "";
-    removeAllInstances(index, "nombre");
-    removeAllInstances(index, "description");
-    removeAllInstances(index, "price");
-    removeAllInstances(index, "imagen");
-    product_img.src = "";
-    btnAgregar.disabled = false;
-    btnAgregar.textContent = "Agregar";
-    btnAgregar.style.fontWeight = "bold";
-}
-
