@@ -13,6 +13,7 @@
         <title>COLIBRÍ_Formulario</title>
         <link rel="stylesheet" href="./css/style_navbar.css">
         <link rel="stylesheet" href="./css/style_formularioProductos.css">
+        <link rel="icon" type="image/x-icon" href="img/colibri.ico">
         <link rel="stylesheet" href="./css/style_footer.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -23,33 +24,41 @@
     <header id="nav1"></header>
 
     <section>
-        <!--GRID-->
+
+        <br>
+        <br>
+        <br>
+
+        <div class="grid-container"> 
+            <div class="shadow p-3 mb-5 bg-white rounded">
+              <div class="registrate">
+
         <div class="container text-center">
-            <!--TITLE-->
-            <div class="row text-center title">
+   
+            <div class="titulo">
                 <h1>
-                    <strong>Añadir un nuevo producto</strong>
-                </h1>
+                    <br>
+                    AÑADIR NUEVO PRODUCTO:</h1>
             </div>
             <form action="sumbit" class="form-productos">
-                <!--INPUTS-->
+         
                 <div class="row">
                     <div class="col input">
-                        <label for="txtNombreProducto" class="input">Nombre del producto</label>
+                        <label for="txtNombreProducto" class="input">NOMBRE:</label>
                         <input type="text" class="form-control" id="txtNombreProducto" placeholder="Nombre del producto"
                             name="txtNombreProducto" required>
                         <div id="alertValidaNombre">
                             <p id="alertNombre"></p>
                         </div>
 
-                        <label for="txtPrecioProducto" class="input">Precio del producto</label>
-                        <input type="number" class="form-control" min="1" max="200" id="txtPrecioProducto"
+                        <label for="txtPrecioProducto" class="input">PRECIO:</label>
+                        <input type="number" class="form-control" min="1" max="10000" id="txtPrecioProducto"
                             placeholder="Precio del producto" name="txtPrecioProducto" required>
                         <div id="alertValidaPrecioProducto">
                             <p id="alertPrecio"></p>
                         </div>
 
-                        <label for="txtDescriptionProducto" class="input">Descripción del producto</label>
+                        <label for="txtDescriptionProducto" class="input">DESCRIPCIÓN:</label>
                         <textarea type="text" class="form-control" id="txtDescriptionProducto"
                             placeholder="Descripción del producto" name="txtDescriptionProducto" required></textarea>
                         <div id="alertValidaDescription">
@@ -58,7 +67,7 @@
 
                         <div>
                             <img id="product_img" class="img-fluid">
-                            <button id="btnImg" class="btn btnImg btn-warning  form-control">Sube la imagen</button>
+                            <button id="btnImg" class="btn btnImg btn-outline-primary  form-control">SELECCIONA LA IMAGEN</button>
                         </div>
                         <div id="alertValidaImg">
                             <p id="alertImg"></p>
@@ -66,15 +75,15 @@
 
                     </div>
                 </div>
-                <!--BOTÓN-->
+      
                 <div class="row">
                     <div class="col">
                         <div style="text-align: center">
                             <div id="alertValidacionesEnviar">
                                 <p id="alertEnviar"></p>
                             </div>
-                            <button id="btnAgregar" class="btn btn-warning  btn-lg btn-block"
-                                type="submit"><strong>Agregar</strong></button>
+                            <button id="btnAgregar" class="btn btn-outline-success  btn-lg btn-block"
+                                type="submit"><strong>AÑADIR</strong></button>
 
                         </div>
                     </div>
@@ -82,12 +91,21 @@
             </form>
         </div>
     </section>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div id="footer1"></div>
 
 
-    <div id="footer1"></div><!-- SCRIPT PARA IMPLEMENTAR SWEET ALERT-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-       <!--Script para implementar Cloudinary para subir un archivo-->
+       <!--Script Cloudinary-->
        <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">
     </script>
  
