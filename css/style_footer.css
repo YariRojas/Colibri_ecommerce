@@ -22,9 +22,8 @@
 #footer_content {
     background-color: #F2F2F2;
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
-    justify-content: space-around;
-    
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
 }
 
 #footer_contacts h1 {
@@ -73,20 +72,10 @@
 
 
 
-.h3 {
+#h3 {
     color: #4ed957;
     text-align: center;
     align-items: center;
-}
-
-#input_group{
-
-    margin: 1rem;
-}
-
-#email{
-    align-items: center;
-    margin: 1rem;
 }
 
 #footer_social_media .footer-link:hover {
