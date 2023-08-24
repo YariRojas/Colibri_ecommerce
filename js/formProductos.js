@@ -1,4 +1,4 @@
-// Parámetros que necesitamos del producto
+/*// Parámetros que necesitamos del producto
 class Product {
   constructor(name, price, description){
       this.name = name;
@@ -120,3 +120,4 @@ document.getElementById("product-list").addEventListener("click", function (e) {
   ui.deleteProduct(e.target); 
 
 });
+*/
