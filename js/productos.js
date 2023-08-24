@@ -1,14 +1,17 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
      const productList = document.getElementById('shopContent');
+
 
     // Obtener productos del Local Storage
     let products = JSON.parse(localStorage.getItem('products')) || [];
+
 
     products.forEach(function (product) {
         const element = createProductElement(product);
         productList.appendChild(element);
     });
 });
+
 
     function createProductElement(product) {
     const element = document.createElement('div');
@@ -22,6 +25,7 @@
                 <div class="card-body price-shop">
                   <h5 class="card-title"> ${product.name}</h5>
                   <br>
+                  
                   <h4>${product.description}</h4>
                   </br>
                     <!--Boton card-->
@@ -31,12 +35,12 @@
                     </svg>
                     Añadir producto
                 </div>
-          </div>
-          
-        </div>`;
+            </div>
+        </div>
+    </div>`;
         return element;
     }
-*/
+    
 function getData(){
     let promesa = fetch("data.json",{
             method:"GET"
@@ -74,7 +78,7 @@ function getData(){
                       <div class="card-body price-shop">
                         <h5 class="card-title1"> ${prod.name}</h5>
                         <br>
-                        
+                       
                         <h6 class="card-title3">${prod.descripcion}</h6>
                         <h5 class="card-title2"> ${prod.precio}</h5>
                         <br>
@@ -84,7 +88,7 @@ function getData(){
                           </button>
                       </div>
                 </div>
-                
+               
               </div>
             `);
         });
