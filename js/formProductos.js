@@ -1,122 +1,309 @@
-// Parámetros que necesitamos del producto
-class Product {
-  constructor(name, price, description){
-      this.name = name;
-      this.price = price;
-      this.description = description;
-      this.image =image; //"";
+//elementos del html
+let txtNombreProducto = document.getElementById("txtNombreProducto");
+let txtDescriptionProducto = document.getElementById("txtDescriptionProducto");
+let txtPrecioProducto = document.getElementById("txtPrecioProducto"); // se declara variables
+let btnAgregar = document.getElementById("btnAgregar");
+let btnImg = document.getElementById("btnImg");
+let product_img = document.getElementById("product_img");
+let index = [];
+
+let productos = [];
 
 
-  }//constructor
-}//class Producto
+//parrafos de las alertas
+let alertNombre = document.getElementById("alertNombre");
+let alertDescrip = document.getElementById("alertDescrip");
+let alertPrecio = document.getElementById("alertPrecio");
+let alertImg = document.getElementById("alertImg");
 
+//div para alertas
+let alertValidaNombre = document.getElementById("alertValidaNombre");
+let alertValidaDescription = document.getElementById("alertValidaDescription");
+let alertValidaPrecioProducto = document.getElementById("alertValidaPrecioProducto");
+let alertValidaImg = document.getElementById("alertValidaImg");
 
-// Métodos para agregar algo dentro de la interfaz UI User Inferface-- agrega los prouctos listados
-class UI {
-  addProduct(product) {
-   const productList = document.getElementById("product-list");
-   const element = document.createElement("div")//agrega un elemento div en el id="product-list" para agregar el nuevo producto
-   element.innerHTML = `
-   <div class="row row-cols-1 row-cols-md-1 g-1">
-   <div class="col">
-     <div class="card h-100">
-           <img src="${product.image}" class="card-img-top" alt="img prod">
-           <div class="card-body price-shop">
-             <h5 class="card-title"> ${product.name}</h5>
-             <br>
-             
-             <h4>${product.description}</h4>
-             </br>
-               <!--Boton card-->
-               <button type="button" class="btn color-btn-header color-btn-card" >
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-               </svg>
-               Comprar
-           </div>
-     </div>
-     
-   </div>`;//fin del div
-    productList.appendChild(element);
-    this.resetForm(); 
-    const reader = new FileReader(); // Agregar una instancia de FileReader
+//se declaran funciones para las validaciones
+function validarNombre(nombre) {
+    if (nombre.length >= 3 && nombre.length < 50) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function validarDescription(description) {
+    if (description.length >= 3 && description.length < 201) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function validarPrecio(precio) {
+    if (precio > 0 && precio != "") {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-    reader.onload = function () {
-        // Muestrar la imagen previamente cargada
-        element.querySelector('.card-img-top').src = reader.result;
-    };
-    if (product.image) {
-      reader.readAsDataURL(product.image); // Leer la imagen cargada
-  }
-
-  }//addProuct
-  resetForm(){
-    document.getElementById("product-form").reset();
-  }
-
-  deleteProduct(element){
-    if (element.name === "delete") {
-    element.parentElement.parentElement.remove(); //Aqui hacemos que se borre el elemento(producto) que queremos borrar
-    this.showMessage("Producto eliminado", "info");
+btnAgregar.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (!validarNombre(txtNombreProducto.value.trim())) {
+        if (!index.includes("nombre")) {
+            alertValidaNombre.insertAdjacentHTML(
+                "afterbegin", ` El <strong> Nombre </strong> no es correcto. <br/> `);
+            alertValidaNombre.style.color = "red";
+            txtNombreProducto.style.border = "solid thin red";
+            index.push("nombre");
+        }
+    }
+    if (!validarDescription(txtDescriptionProducto.value.trim())) {
+        if (!index.includes("description")) {
+            alertValidaDescription.insertAdjacentHTML(
+                "afterbegin", ` La <strong> Descripción </strong> no es correcta. <br/> `);
+            alertValidaDescription.style.color = "red";
+            txtDescriptionProducto.style.border = "solid thin red";
+            index.push("description");
+        }
+    }
+    if (!validarPrecio(txtPrecioProducto.value.trim())) {
+        if (!index.includes("precio")) {
+            alertValidaPrecioProducto.insertAdjacentHTML(
+                "afterbegin", ` El <strong> Precio </strong> no es correcto. <br/> `);
+            alertValidaPrecioProducto.style.color = "red";
+            txtPrecioProducto.style.border = "solid thin red";
+            index.push("precio");
+        }
     }
 
-  }//deleteProduct
+    if (!product_img.src) {
+        if (!index.includes("imagen")) {
+            alertValidaImg.insertAdjacentHTML(
+                "afterbegin", ` Debe seleccionar una <strong>imagen</strong>.<br/> `);
+            alertValidaImg.style.color = "red";
+            alertImg.style.border = "solid thin red";
+            index.push("imagen");
+        }
+    }
+    if (!product_img.src.match(/[^\s]+(.*?).(jpg|jpeg|png|JPG|JPEG|PNG)$/)) {
+        if (!index.includes("imagen")) {
+            alertValidaImg.insertAdjacentHTML(
+                "afterbegin", ` El formato de la <strong>imagen</strong> es incorrecto.<br/> `);
+            alertValidaImg.style.color = "red";
+            alertImg.style.border = "solid thin red";
+            index.push("imagen");
+        }
+    }
 
-  showMessage(message, cssClass) {
-    const div = document.createElement("div");
-    div.className = `alert alert-${cssClass}`;  //cssClass solo es una clase se Bootstrap 
-    div.appendChild(document.createTextNode(message));
-  //Mostrando en el DOM
-  const container = document.querySelector(".container");
-  const app = document.querySelector("#App");
-  container.insertBefore(div, app);
-  setTimeout(function(){
-    document.querySelector(".alert").remove();
-  },3000);//remueve el mensaje
+
+    if (!index.includes("nombre") && !index.includes("description") && !index.includes("price") && !index.includes("imagen")) {
+        btnAgregar.disabled = true;
+        btnAgregar.textContent = "Agregando...";
+        btnAgregar.style.fontWeight = "bold";
+        guardarProducto(txtNombreProducto.value, product_img.src, txtDescriptionProducto.value, txtPrecioProducto.value);
+        Toast.fire({
+            icon: 'success',
+            title: '¡El producto se registró con éxito!'
+        });
+        limpiarTodo();
+    }
+});
+
+function guardarProducto(name, src, description, price) {
+    let producto = `{
+        "name": "${name}",
+        "img": "${src}",
+        "description": "${description}",
+        "price": "${price}"
+    }`;
+
+    productos.push(JSON.parse(producto));
+    this.localStorage.setItem("producto", JSON.stringify(productos));
+}
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 5000,
+    timerProgressBar: true
+});
 
 
-  }//showMessage
+window.addEventListener("load", function (event) {
+    event.preventDefault();
+    console.log(productos);
+    if (this.localStorage.getItem("producto") != null) {
+        JSON.parse(this.localStorage.getItem("producto")).forEach((p) => {
+            productos.push(p);
+        }//foreach
+        );
+
+    }//if
+
+}); // window // load
 
 
-}//class UI
 
-//Dom Events
-document.getElementById('product-form').addEventListener('submit',function (e)  {
-  e.preventDefault()
-    const name = document.getElementById("name").value;
-    const price = document.getElementById("price").value;
-    const description = document.getElementById("description").value;
-    const imageFile = document.getElementById("image").files[0];
+btnImg.addEventListener("click", function (event) {
+    event.preventDefault();
+    // Cloudinary ================================================
+    var myWidget = cloudinary.createUploadWidget({
+        cloudName: 'dinq39jcf',
+        uploadPreset: 'q7vp9g0r',
+        multiple: false
+    }, (error, result) => {
+        if (!error && result && result.event === "success") {
+            console.log('Done! Here is the image info: ', result.info);
+            product_img.src = result.info.secure_url;
+        }
+    });
+    myWidget.open();
 
-    if (name === '' || isNaN(price) || description === '' || imageFile === "") {
-      
-       showMessage('Completa los campos faltantes correctamente', 'danger');
-  }
-   
-    //almacena los nuevos productos
-    const product = new Product(name, price, description);
-    product.image = imageFile;  //asigna la imagen al producto
+}, false);
 
-  //LOCALSTORAGE
-    let products = JSON.parse(localStorage.getItem("products")) || [];
-    products.push(product);
-    localStorage.setItem("products", JSON.stringify(products));
-    
-    const ui = new UI();//nuevainstancia para agregar producto
-    if(name === "" || price === "" || description === "" ){
-       return ui.showMessage("Completa los campos faltantes correctamente", "danger");
-    }//valida que los campos están vacios 
-    ui.addProduct(product);//agrega el producto a la interfaz
-    ui.showMessage("Se agregó el producto ", "success");
-   
-    
 
-   
-    
-});//addEventListener
-
-document.getElementById("product-list").addEventListener("click", function (e) {
-  const ui = new UI ();
-  ui.deleteProduct(e.target); 
+//Listener para validar el nombre cada vez que el usuario teclee algo en el campo nombre
+txtNombreProducto.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (!validarNombre(txtNombreProducto.value.trim())) {
+        if (!index.includes("nombre")) {
+            alertValidaNombre.insertAdjacentHTML(
+                "afterbegin", ` El <strong> Nombre </strong> no es correcto. <br/> `);
+            alertValidaNombre.style.color = "red";
+            txtNombreProducto.style.border = "solid thin red";
+            index.push("nombre");
+        }
+    }//if nombre del producto no cumple las validaciones
+    else {
+        //quitar alertas
+        alertValidaNombre.innerHTML = "";
+        alertNombre.style.display = "none";
+        txtNombreProducto.style.border = "";
+        removeAllInstances(index, "nombre");
+    }
 
 });
+
+
+txtDescriptionProducto.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (!validarDescription(txtDescriptionProducto.value.trim())) {
+        if (!index.includes("description")) {
+            alertValidaDescription.insertAdjacentHTML(
+                "afterbegin", ` La <strong> Descripción </strong> no es correcta. <br/> `);
+            alertValidaDescription.style.color = "red";
+            txtDescriptionProducto.style.border = "solid thin red";
+            index.push("description");
+        }
+    }//if description no cumple las validaciones
+    else {
+        //quitar alertas
+        alertValidaDescription.innerHTML = "";
+        alertDescrip.style.display = "none";
+        txtDescriptionProducto.style.border = "";
+        removeAllInstances(index, "description");
+    }
+
+});
+
+txtPrecioProducto.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (!validarPrecio(txtPrecioProducto.value.trim())) {
+        if (!index.includes("precio")) {
+            alertValidaPrecioProducto.insertAdjacentHTML(
+                "afterbegin", ` El <strong> Precio </strong> no es correcto. <br/> `);
+            alertValidaPrecioProducto.style.color = "red";
+            txtPrecioProducto.style.border = "solid thin red";
+            index.push("precio");
+        }
+    }//if precio producto no cumple las validaciones 
+    else {
+        //quitar alertas
+        alertValidaPrecioProducto.innerHTML = "";
+        alertPrecio.style.display = "none";
+        txtPrecioProducto.style.border = "";
+        removeAllInstances(index, "precio");
+    }
+
+});
+
+txtPrecioProducto.addEventListener("change", function (event) {
+    event.preventDefault();
+    if (!validarPrecio(txtPrecioProducto.value.trim())) {
+        if (!index.includes("precio")) {
+            alertValidaPrecioProducto.insertAdjacentHTML(
+                "afterbegin", ` El <strong> Precio </strong> no es correcto. <br/> `);
+            alertValidaPrecioProducto.style.color = "red";
+            txtPrecioProducto.style.border = "solid thin red";
+            index.push("precio");
+        }
+    }//if precio producto no cumple las validaciones 
+    else {
+        //quitar alertas
+        alertValidaPrecioProducto.innerHTML = "";
+        alertPrecio.style.display = "none";
+        txtPrecioProducto.style.border = "";
+        removeAllInstances(index, "precio");
+    }
+
+});
+
+
+product_img.addEventListener("load", function (event) {
+    event.preventDefault();
+    if (!product_img.src) {
+        if (!index.includes("imagen")) {
+            alertValidaImg.insertAdjacentHTML(
+                "afterbegin", ` Debe seleccionar una <strong>imagen</strong>.<br/> `);
+            alertValidaImg.style.color = "red";
+            alertImg.style.border = "solid thin red";
+            index.push("imagen");
+        }
+    } //if la imagen no se selecciona 
+    else {
+        //quitar alertas
+        alertValidaImg.innerHTML = "";
+        alertImg.style.display = "none";
+        product_img.style.border = "";
+        removeAllInstances(index, "imagen");
+    }
+    if (!product_img.src.match(/[^\s]+(.*?).(jpg|jpeg|png|JPG|JPEG|PNG)$/)) {
+        if (!index.includes("imagen")) {
+            alertValidaImg.insertAdjacentHTML(
+                "afterbegin", ` El formato de la <strong>imagen</strong> es incorrecto.<br/> `);
+            alertValidaImg.style.color = "red";
+            alertImg.style.border = "solid thin red";
+            index.push("imagen");
+        }
+    }//else if la imagen (formato) no cumple las validaciones  
+    else {
+        //quitar alertas
+        alertValidaImg.innerHTML = "";
+        alertImg.style.display = "none";
+        product_img.style.border = "";
+        removeAllInstances(index, "imagen");
+    }
+});
+
+//Remueve todas las instancias de un objeto dado (item) que se encuentre en el arreglo index
+function removeAllInstances(arr, item) {
+    for (var i = arr.length; i--;) {
+        if (arr[i] === item) arr.splice(i, 1);
+    }
+}
+
+function limpiarTodo() {
+    index = [];
+    txtNombreProducto.value = "";
+    txtDescriptionProducto.value = "";
+    txtPrecioProducto.value = "";
+    removeAllInstances(index, "nombre");
+    removeAllInstances(index, "description");
+    removeAllInstances(index, "price");
+    removeAllInstances(index, "imagen");
+    product_img.src = "";
+    btnAgregar.disabled = false;
+    btnAgregar.textContent = "Agregar";
+    btnAgregar.style.fontWeight = "bold";
+}
+
