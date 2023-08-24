@@ -5,9 +5,9 @@ body {
 
 .grid-container {
 	box-sizing: border-box;
-	padding: 3px;
+	padding: 33px;
 	margin: 5px;
-	margin-left: 12px;
+	margin-left: 50px;
 
 
 }
@@ -25,10 +25,13 @@ body {
 .ingr {
 	text-align: center;
 	color: #4ed957;
+	margin: 19px;
+	width: ;
 }
 
 .tituloLog {
 	color: #4ed957;
+	text-align: center;
 }
 
 .form-label {
