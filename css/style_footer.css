@@ -185,7 +185,32 @@
         padding: 3rem 2rem;
     }
 }
+@media screen and (max-width:425px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+    #footer_contacts {
+        text-align: center;
+    }
+    #footer_social_media {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .footer-list {
+        text-align: center;
+    }
 
+    #input_group {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    #input_group input {
+        margin-left: 0;
+    }
+}
 
 
 
