@@ -6,8 +6,9 @@ function validar() {
 
     let regexNombre = /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+([A-Za-zÑñÁáÉéÍíÓóÚú]{3,40}\s*)))*$/;
     let regexCorreo = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let regexTel = /^(?!0000000000$|0000000001$)[0-9]{10}$/;
-    let regexMensaje = /^[\s\S]{10,250}$/;
+    let regexTel = /^(?!0000000000$|0000001111$)[0-9]{10}$/;
+    let regexMensaje = /^(?!(\d)\1+$)[\s\S]{10,250}$/;
+
 
 
     let nombreValid = regexNombre.test(nombre.value);
@@ -51,7 +52,7 @@ function validar() {
         errorMessages.push("El campo Comentarios no puede estar vacío.");
         mensaje.style.borderColor = "red";
     } else if (!mensajeValid) {
-        errorMessages.push("El mensaje debe ser de 10 a 250 caracteres y solo debe contener números, letras, puede contener caracteres especiales.");
+        errorMessages.push("El mensaje debe ser de 10 a 250 caracteres y solo debe contener números y letras (no repetidos más de 4 veces), puede contener caracteres especiales.");
         mensaje.style.borderColor = "red";
     } else {
         mensaje.style.borderColor = "green";
