@@ -1,6 +1,31 @@
+//FUNCIÓN PARA AÑADIR UN PRODUCTO CON CARD A LISTA PRODUCTOS
+function addItem(item) {
+    listaProductos.insertAdjacentHTML("beforeend", `            
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="card-box card h-90">
+            <img src="${item.img}" class="card-img-top" alt="Foto elote">
+            <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class= "card-text"> ${item.description } </p>
+                <p class="text-center"><strong>$${item.price}</strong></p>
+                <!-- BOTÓN -->
+                <div class="row">
+                    <div class="col">
+                        <div style="text-align: center">
+                            <button id="btnAgregar" class="btn btn-lg btn-block"
+                                type="submit"><strong>Agregar</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`);
+
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
      const productList = document.getElementById('shopContent');
-
 
     // Obtener productos del Local Storage
     let products = JSON.parse(localStorage.getItem('products')) || [];

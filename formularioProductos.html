@@ -33,64 +33,64 @@
             <div class="shadow p-3 mb-5 bg-white rounded">
               <div class="registrate">
 
-        <div class="container text-center">
-   
-            <div class="titulo">
-                <h1>
-                    <br>
-                    AÑADIR NUEVO PRODUCTO:</h1>
-            </div>
-            <form action="sumbit" class="form-productos">
-         
-                <div class="row">
-                    <div class="col input">
-                        <label for="txtNombreProducto" class="input">NOMBRE:</label>
-                        <input type="text" class="form-control" id="txtNombreProducto" placeholder="Nombre del producto"
-                            name="txtNombreProducto" required>
-                        <div id="alertValidaNombre">
-                            <p id="alertNombre"></p>
-                        </div>
-
-                        <label for="txtPrecioProducto" class="input">PRECIO:</label>
-                        <input type="number" class="form-control" min="1" max="10000" id="txtPrecioProducto"
-                            placeholder="Precio del producto" name="txtPrecioProducto" required>
-                        <div id="alertValidaPrecioProducto">
-                            <p id="alertPrecio"></p>
-                        </div>
-
-                        <label for="txtDescriptionProducto" class="input">DESCRIPCIÓN:</label>
-                        <textarea type="text" class="form-control" id="txtDescriptionProducto"
-                            placeholder="Descripción del producto" name="txtDescriptionProducto" required></textarea>
-                        <div id="alertValidaDescription">
-                            <p id="alertDescrip"></p>
-                        </div>
-
-                        <div>
-                            <img id="product_img" class="img-fluid">
-                            <button id="btnImg" class="btn btnImg btn-outline-primary  form-control">SELECCIONA LA IMAGEN</button>
-                        </div>
-                        <div id="alertValidaImg">
-                            <p id="alertImg"></p>
-                        </div>
-
+                <div class="container text-center">
+                    <!--TITLE-->
+                    <div class="row text-center title">
+                        <h1>
+                            <strong>AÑADIR NUEVO PRODUCTO</strong>
+                        </h1>
                     </div>
-                </div>
-      
-                <div class="row">
-                    <div class="col">
-                        <div style="text-align: center">
-                            <div id="alertValidacionesEnviar">
-                                <p id="alertEnviar"></p>
+                    <form action="sumbit" class="form-productos">
+                        <!--INPUTS-->
+                        <div class="row">
+                            <div class="col input">
+                                <label for="txtNombreProducto" class="input">NOMBRE DEL PRODUCTO:</label>
+                                <input type="text" class="form-control" id="txtNombreProducto" placeholder="Nombre del producto"
+                                    name="txtNombreProducto" required>
+                                <div id="alertValidaNombre">
+                                    <p id="alertNombre"></p>
+                                </div>
+        
+                                <label for="txtPrecioProducto" class="input">PRECIO DE PRODUCTO:</label>
+                                <input type="number" class="form-control" min="1" max="200" id="txtPrecioProducto"
+                                    placeholder="Precio del producto" name="txtPrecioProducto" required>
+                                <div id="alertValidaPrecioProducto">
+                                    <p id="alertPrecio"></p>
+                                </div>
+        
+                                <label for="txtDescriptionProducto" class="input">DESCRIPCIÓN DEL PRODUCTO:</label>
+                                <textarea type="text" class="form-control" id="txtDescriptionProducto"
+                                    placeholder="Descripción del producto" name="txtDescriptionProducto" required></textarea>
+                                <div id="alertValidaDescription">
+                                    <p id="alertDescrip"></p>
+                                </div>
+        
+                                <div>
+                                    <img id="product_img" class="img-fluid">
+                                    <button id="btnImg" class="btn btnImg btn-warning  form-control">ELIGE LA IMAGEN</button>
+                                </div>
+                                <div id="alertValidaImg">
+                                    <p id="alertImg"></p>
+                                </div>
+        
                             </div>
-                            <button id="btnAgregar" class="btn btn-outline-success  btn-lg btn-block"
-                                type="submit"><strong>AÑADIR</strong></button>
-
                         </div>
-                    </div>
+                        <!--BOTÓN-->
+                        <div class="row">
+                            <div class="col">
+                                <div style="text-align: center">
+                                    <div id="alertValidacionesEnviar">
+                                        <p id="alertEnviar"></p>
+                                    </div>
+                                    <button id="btnAgregar" class="btn btn-warning  btn-lg btn-block"
+                                        type="submit"><strong>Agregar</strong></button>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-    </section>
+            </section>
 </div>
 </div>
 </div>
