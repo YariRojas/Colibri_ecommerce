@@ -3,7 +3,7 @@ function addItem(item) {
     listaProductos.insertAdjacentHTML("beforeend", `            
     <div class="col-12 col-md-6 col-lg-4 mb-3">
         <div class="card-box card h-90">
-            <img src="${item.img}" class="card-img-top" alt="Foto elote">
+            <img src="${item.img}" class="card-img-top" alt="Foto">
             <div class="card-body">
                 <h5 class="card-title">${item.name}</h5>
                 <p class= "card-text"> ${item.description } </p>
