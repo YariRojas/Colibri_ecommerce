@@ -33,7 +33,7 @@ footer.insertAdjacentHTML("beforeend", `
      <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <h1>COLIBRÍ.co</h1>
+                <h1>colibrí.com</h1>
                 <p>¡Lo mejor de México, para ti!</p>
                 <div id="footer_social_media">
                     <img src="./img/instagram.png" href="https://www.instagram.com/" class="footer-link" id="instagram">
