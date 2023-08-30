@@ -7,11 +7,9 @@
 }
 
 #titulo {
-
-
     text-align: center;
     font-size: 2.5rem;
-    font-family: 'Raleway', cursive;
+    font-family: 'Raleway';
     color: #4ED957;
     padding: 4px;
 }
@@ -41,10 +39,12 @@
 .card-title2{
     padding: 5px;
     color: black;
+    font-family: 'Raleway';
 }
 
 .card-title3{
     color: #0D51D9;
+    font-family: 'Raleway';
 }
 
 .boton1{

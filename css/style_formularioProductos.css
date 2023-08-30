@@ -3,27 +3,7 @@
   margin: 20px;
   font-weight: 300;
   color: #4ed957;
-}
-
-.titulo {
-  color: #4ed957;
   font-family: 'Raleway';
-}
-
-.form-productos {
-  width: 100%;
-  max-width: 700px;
-  padding: 15px;
-  margin: 0 auto;
-  font-size: 25PX;
-}
-
-.form-control {
-  border-color: #0D51D9;
-  position: flex;
-  box-sizing: border-box;
-  height: auto;
-  font-size: 20px;
 }
 
 .input {
@@ -31,3 +11,4 @@
   color: #0D51D9;
   font-family: 'Raleway';
 }
+
