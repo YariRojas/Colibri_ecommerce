@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="card-body price-shop">
                         <h5 class="card-title1"> ${product.name}</h5>
                     <br>
-                        <h6 class="card-title3">${product.descripcion}</h6>
+                        <h6 class="card-title3">${product.description}</h6>
                         <h5 class="card-title2"> ${product.price}</h5>
                     <br>
                     <button type="button" class="boton1">Comprar</button>
