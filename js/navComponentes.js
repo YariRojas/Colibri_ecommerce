@@ -45,17 +45,17 @@ footer.insertAdjacentHTML("beforeend", `
                 <li>
                     <h3>DIRECTORIO</h3>
                 </li>
-                <li><a href="./index.html" class="footer-link">INICIO</a></li>
-                <li><a href="./nosotros.html" class="footer-link">NOSOTROS</a></li>
-                <li><a href="./productos.html" class="footer-link">CATÁLOGO</a></li>
+                <li><a href="./index.html" class="footer-link" style="text-decoration: none;" >INICIO</a></li>
+                <li><a href="./nosotros.html" class="footer-link" style="text-decoration: none;">NOSOTROS</a></li>
+                <li><a href="./productos.html" class="footer-link" style="text-decoration: none;">CATÁLOGO</a></li>
             </ul>
             <ul class="footer-list">
                 <li>
                     <h3>CONTÁCTANOS</h3>
                 </li>
-                <li><a href="./login.html" class="footer-link">REGÍSTRATE</a></li>
-                <li><a href="./login.html" class="footer-link">MI CUENTA</a></li>
-                <li><a href="formularioProductos.html" class="footer-link">ADMINISTRADOR</a></li>
+                <li><a href="./login.html" class="footer-link" style="text-decoration: none;">REGÍSTRATE</a></li>
+                <li><a href="./login.html" class="footer-link" style="text-decoration: none;">MI CUENTA</a></li>
+                <li><a href="formularioProductos.html" class="footer-link" style="text-decoration: none;">ADMINISTRADOR</a></li>
             </ul>
             <div id="footer_subscribe">
                 <h3>¡Suscríbete a nuestro boletín!</h3>
