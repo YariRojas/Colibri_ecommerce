@@ -1,4 +1,33 @@
+const Users = JSON.parse(localStorage.getItem('login_success')) || false;
 
+if (!Users) {
+    Swal.fire({
+        icon: 'error',
+        title: 'Acceso denegado',
+        text: 'Debes iniciar sesión para acceder a esta página.',
+        showConfirmButton: false,
+        timer: 2000, // cerrar después de 2 segundos
+        willClose: () => {
+            window.location.href = 'login.html';
+        }
+    });
+}
+
+const logout = document.querySelector('#logout');
+
+logout.addEventListener('click', () => {
+    Swal.fire({
+        icon: 'info',
+        title: 'Cierre de sesión',
+        text: '¡Hasta pronto!',
+        showConfirmButton: false,
+        timer: 1500, //cerrar después de 1.5 segundos
+        willClose: () => {
+            localStorage.removeItem('login_success');
+            window.location.href = 'login.html';
+        }
+    });
+});
 
 /*CARRUSEL DE OFERTAS*/
 
