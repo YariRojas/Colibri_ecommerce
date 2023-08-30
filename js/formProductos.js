@@ -86,7 +86,7 @@ btnAgregar.addEventListener("click", function (event) {
         btnAgregar.disabled = true;
         btnAgregar.textContent = "Agregando nuevo producto...";
         btnAgregar.style.fontWeight = "bold";
-        guardarProducto(txtNombreProducto.value, product_img.src, txtDescriptionProducto.value, txtPrecioProducto.value);
+        guardarProducto(txtNombreProducto.value, txtPrecioProducto.value, txtDescriptionProducto.value, product_img.src);
         Toast.fire({
             icon: 'success',
             title: '¡EL NUEVO PRODUCTO HA SIDO REGISTRADO!'

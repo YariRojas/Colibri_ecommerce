@@ -4,14 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const productList = document.getElementById('shopContent');
 
 //productos del Local Storage
-    let products = JSON.parse(localStorage.getItem('producto')) || [];
+    let products = JSON.parse(localStorage.getItem('producto')) || []; 
+    console.log (products);
     products.forEach(function (product) {
+
         const element = createProductElement(product);
         productList.appendChild(element);
     });
 });
 
     function createProductElement(product) {
+
     const element = document.createElement('div');
     element.className = 'col';
     element.innerHTML = `<div class="row row-cols-1 row-cols-md-1 g-1">
