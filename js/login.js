@@ -91,6 +91,12 @@ const signupForm = document.querySelector('#signupForm');
                 text: '¡El registro se ha completado con éxito!'
             });
 
+document.querySelector('#signupName').value = '';
+document.querySelector('#signupEmail').value = '';
+document.querySelector('#signupPassword').value = '';
+document.querySelector('#signupConfirmPassword').value = '';
+document.querySelector('#signupPhoneNumber').value = '';
+            
             window.location.href = '#loginForm';
         }
     });
@@ -127,7 +133,6 @@ if (loginForm) {
         }
     });
 }
-
 
 
 
