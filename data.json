@@ -1,0 +1,188 @@
+
+[
+    {
+        "id": 1,
+        "img":"./img/1080x1080/vestidos/blancolor.png",
+        "name":"Vestido Alebrije",
+        "descripcion":"Vestido blanco con diversos bordados coloridos.", 
+        "precio": "$ 1,700",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+    },
+
+    {
+        "id": 2,
+        "img":"./img/1080x1080/vestidos/rojoama.png",
+        "name":"Vestido Amaro",
+        "descripcion":"Vestido vino de manta y hombros descubiertos.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+
+    },
+
+    {
+        "id": 3,
+        "img":"./img/1080x1080/vestidos/azul.png",
+        "name":"Vestido Delicia",
+        "descripcion":"Vestido de algodón, 2 piezas con bordado de rosas.", 
+        "precio": "$ 1,500",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+    },
+
+    {
+        "id": 4,
+        "img":"./img/1080x1080/vestidos/negro.png",
+        "name":"Vestido Siempre Contigo",
+        "descripcion":"Vestido largo, manta negra con bordado en el pecho.", 
+        "precio": "$ 2,100",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+    },
+    
+    {
+        "id": 5,
+        "img": "./img/1080x1080/vestidos/purple.png",
+        "name":"Vestido Mi Bella Oaxaca",
+        "descripcion":"Vestido morado, largo y bordado a mano de colores.", 
+        "precio": "$ 2,100",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+    },
+    
+    {
+        "id": 6,
+        "img":"./img/1080x1080/vestidos/rosita.png",
+        "name":"Conjunto Fresita",
+        "descripcion":"Conjunto de  2 piezas,falda y blusa bordadas con hilo brillante.", 
+        "precio": "$ 2,500",
+        "cantidad": 1,
+        "categoria": "vestido artesanal"
+    },
+
+    {
+        "id": 7,
+        "img":"./img/1080x1080/blusas/amarilla.png",
+        "name":"Blusa Girasol",
+        "descripcion":"Blusa amarilla bordada a mano con hilo teñido con curcúma.", 
+        "precio": "$ 1,300",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 8,
+        "img":"./img/1080x1080/blusas/rojo.png",
+        "name":"Blusa De Rojo Te Ves Bien",
+        "descripcion":" Blusa teñida naturalmente, bordada a mano con holanes.", 
+        "precio": "$ 1,300",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 9,
+        "img":"./img/1080x1080/blusas/negro.png",
+        "name":"Blusa Cintillo",
+        "descripcion":"Blusa estilo campesino, bordada con figuras geometricas.", 
+        "precio": "$ 1,300",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+    },
+
+    {
+        "id": 10,
+        "img":"./img/1080x1080/blusas/azul.png",
+        "name":"Blusa El Listón",
+        "descripcion":" Blusa con olanes en las mangas y bordado de rombos.", 
+        "precio": "$ 1,500",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    },
+
+    {
+        "id": 11,
+        "img":"./img/1080x1080/blusas/fiucshia.png",
+        "name":"Blusa Bugambilia",
+        "descripcion":"Blusa con bordado de flores y espalda descubierta.", 
+        "precio": "$ 1,500",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    },
+
+    {
+        "id": 12,
+        "img":"./img/1080x1080/blusas/cuadros.png",
+        "name":"Blusa Cuadritos",
+        "descripcion":" Blusa bordada a mano con hilo teñido naturalmente.", 
+        "precio": "$ 1,300",
+        "cantidad": 1,
+        "categoria": "blusa artesanal"
+
+    },
+   
+    {
+        "id": 13,
+        "img":"./img/1080x1080/guayaberas/arcoiris.png",
+        "name":"Guayabera Arcoiris",
+        "descripcion":" Guayabera de manta blanca, bordada con hilo tornasol.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+    },
+
+    {
+        "id": 14,
+        "img":"./img/1080x1080/guayaberas/azul.png",
+        "name":"Guayabera Azul",
+        "descripcion":" Guayabera de manta azul, bordada con hilo de algodón blanco.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+    },
+
+    {
+        "id": 15,
+        "img":"./img/1080x1080/guayaberas/beige.png",
+        "name":"Guayabera Tradicional",
+        "descripcion":" Guayabera de manta beige, bordada en forma de rombos.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+    },
+
+    {
+        "id": 16,
+        "img":"./img/1080x1080/guayaberas/citilloazul.png",
+        "name":"Guayabera Tenoch",
+        "descripcion":" Guayabera de manta blanca, bordada con cintillo azul.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+    },
+
+    {
+        "id": 17,
+        "img":"./img/1080x1080/guayaberas/floral.png",
+        "name":"Guayabera Flor Del Campo",
+        "descripcion":" Guayabera de manta blanca con bordado floreado.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+
+    },
+
+    {
+        "id": 18,
+        "img":"./img/1080x1080/guayaberas/rosanegro.png",
+        "name":"Guayabera Rosa Espinosa",
+        "descripcion":" Guayabera de manta negra con bordado de rosas.", 
+        "precio": "$ 1,900",
+        "cantidad": 1,
+        "categoria": "guayabera artesanal"
+
+    }
+]

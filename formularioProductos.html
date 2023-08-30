@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>COLIBRÍ_Formulario</title>
+        <link rel="stylesheet" href="./css/style_navbar.css">
+        <link rel="stylesheet" href="./css/style_formularioProductos.css">
+        <link rel="icon" type="image/x-icon" href="img/colibri.ico">
+        <link rel="stylesheet" href="./css/style_footer.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    </head>
+
+<body>
+    <header id="nav1"></header>
+
+    <section>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="grid-container">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="registrate">
+                    <div class="container text-center">
+                        <div class="row text-center title">
+                            <h1>AÑADIR UN NUEVO PRODUCTO</h1>
+                        </div>
+                        <form action="sumbit" class="form-productos">
+                            <div class="row">
+                                <div class="col input">
+                                    <label for="txtNombreProducto" class="input">NOMBRE DEL NUEVO PRODUCTO:</label>
+                                    <input type="text" class="form-control" id="txtNombreProducto" placeholder="Nombre del producto" name="txtNombreProducto" required>
+                                    <div id="alertValidaNombre"><p id="alertNombre"></p></div>
+
+                                    <label for="txtPrecioProducto" class="input">PRECIO DEL NUEVO PRODUCTO:</label>
+                                    <input type="number" class="form-control" id="txtPrecioProducto" placeholder="Precio del producto ($)" name="txtPrecioProducto" required> 
+                                    <div id="alertValidaPrecioProducto"><p id="alertPrecio"></p></div>
+
+                                    <label for="txtDescriptionProducto" class="input">DESCRIPCIÓN DEL NUEVO PRODUCTO:</label>
+                                    <textarea type="text" class="form-control" id="txtDescriptionProducto" placeholder="Descripción del producto" name="txtDescriptionProducto" required></textarea>
+                                    <div id="alertValidaDescription"><p id="alertDescrip"></p></div>
+
+                                    <div>
+                                        <img id="product_img" class="img-fluid">
+                                        <button id="btnImg" class="btn btnImg btn-outline-success form-control">ELIGE LA
+                                            IMAGEN DEL NUEVO PRODUCTO</button>
+                                    </div>
+                                    <div id="alertValidaImg"><p id="alertImg"></p></div>
+                                    </div>
+                            </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div style="text-align: center">
+                                        <div id="alertValidacionesEnviar"><p id="alertEnviar"></p></div>
+                                        <button id="btnAgregar" class="btn btn-primary btn-lg btn-block" type="submit">AGREGAR NUEVO PRODUCTO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer1"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="./js/navComponentes.js"></script>
+    <script src="./js/formProductos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

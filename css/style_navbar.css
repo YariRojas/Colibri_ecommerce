@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../img/fondocolibri.jpg);
+
+}
+
+/* logo */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: auto;
+}
+
+/* Estilo para el logo */
+img {
+    padding: 1%;
+    width: 300px;
+    height: 120px;
+}
+
+/* Estilos para los iconos */
+.icon a {
+    display: inline-block;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.icon img {
+    margin-right: 50px;
+}
+
+
+/* Estilos del navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 5000px;
+    margin: 0%;
+    background-color: #f2f2f2;
+}
+
+.nav-link {
+    color: #0d51d9;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 5px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: #4ed957;
+    transition: 0.5s;
+
+}
+
+/* TOGGLE */
+.nav-toggle {
+    background-color: #0d51d996;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border-color: #0D51D9;
+    padding: 5px 5px 15px 40px;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+        background-color: #F2F2F2;
+        position: fixed;
+        top: 70px;
+        width: 80%;
+        padding: 10px 50px 20px;
+        height: calc(30% - 50px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 1; 
+    }
+
+    .nav-menu-item {
+        line-height: 30px;
+        font-size: 13px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #4ED957;
+    }
+
+    .nav-toggle {
+        display: inline;
+        padding: 15px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        border-radius: 100px;
+
+        color: #ffffff;
+        transition: 0.5s;
+        cursor: pointer;
+         margin-left: 10px;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}

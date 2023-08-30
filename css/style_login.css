@@ -1,0 +1,105 @@
+body {
+	line-height: 1em;
+	font-family: 'Raleway';
+
+}
+
+ h2.mb-4{
+	color:#4ed957;
+}
+
+.grid-container {
+	box-sizing: border-box;
+	padding: 33px;
+	margin: 5px;
+	margin-left: 50px;
+
+
+}
+
+body {
+	min-height: 100%;
+	
+}
+
+.form-control {
+	text-align: left;
+	font-size: 12px;
+}
+
+.ingr {
+	text-align: center;
+	color: #4ed957;
+	margin: 19px;
+	width: ;
+}
+
+.tituloLog {
+	color: #4ed957;
+	text-align: center;
+}
+
+.form-label {
+	color: #0d51d9;
+	font-size: 16px;
+}
+
+/*VistaCelular*/
+@media(max-width: 899px) {
+	.login-container {
+		grid-area: login-container;
+		padding-right: 5%;
+	}
+
+
+	.registrate {
+		grid-area: registrate;
+		padding: 50px;
+	}
+
+	.ingresar {
+		grid-area: ingresar;
+		padding: 50px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-columns: auto;
+		grid-template-areas:
+			'registrate'
+			'ingresar';
+		gap: 0px;
+		height: 100%;
+	}
+
+	.enlaces-container {
+		display: none;
+	}
+
+}
+
+/*Escritorio*/
+@media(min-width:900px) {
+	.registrate {
+		grid-area: registrate;
+		padding: 50px;
+	}
+
+	.ingresar {
+		grid-area: ingresar;
+		padding: 50px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			'registrate ingresar'
+			'registrate  ingresar';
+		gap: 0px;
+		height: 100%;
+	}
+
+}

@@ -1,0 +1,131 @@
+.container {
+    font-family: 'Raleway';
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Raleway';
+    color: #4ED957;
+    padding: 4px;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 400ms ease;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+}
+
+.card-title1{
+    padding: 20px 10px 5px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #4ED957;
+    text-align: center;
+}
+
+.card-title2{
+    padding: 5px;
+    color: black;
+    font-family: 'Raleway';
+}
+
+.card-title3{
+    color: #0D51D9;
+    font-family: 'Raleway';
+}
+
+.boton1{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0D51D9;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+}
+
+.boton1:hover {
+    background-color: #4ED957;
+  }
+
+
+.card:hover {
+    box-shadow: 0px 0px 11px 5px #4ED957;
+}
+
+.card img {
+    height: auto;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.price-shop {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.color-btn-header,
+.color-btn-header:hover {
+    background-color: #4ED957;
+    transition: background-color 300ms;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4ED957;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.btn:hover {
+    background-color: #39a140;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h5:hover {
+    color: #4ED957;
+}
+
+#nav1{
+    padding: 0px 0px;
+}
+
+#footer1 {
+  padding: 0px 0px;  
+}
+
+#titulo {
+    padding: 5px 0px;
+}
+
+/* Media Query para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
