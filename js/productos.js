@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createProductElement(product) {
     const element = document.createElement('div');
     element.className = 'col';
-    element.innerHTML = 
-    `<div class="row row-cols-1 row-cols-md-1 g-1">
+    element.innerHTML = `<div class="row row-cols-1 row-cols-md-1 g-1">
         <div class="col">
             <div class="card h-100">
                 <img src="${product.img}" class="card-img-top" alt="img prod">
@@ -33,23 +32,24 @@ document.addEventListener('DOMContentLoaded', function () {
         return element;
     }
     
-function getData(){
-    let promesa = fetch("data.json",{
-            method:"GET"
+    function getData() {
+        let promesa = fetch("data.json", {
+            method: "GET"
         });
-        promesa.then((response)=>{
+        promesa.then((response) => {
             response.json()
-            .then((data)=>{
+            .then((data) => {
                 createCards(data);
             })
-            .catch((error)=>{console.error(error,"Ocurrio un error en la solicitud");
-            })
-            .catch((error)=>{
-            console.error(error,"Ocurrió un error en la solicitud");
+            .catch((error) => {
+                console.error(error, "Ocurrió un error al leer los datos");
+            });
+        })
+        .catch((error) => {
+            console.error(error, "Ocurrió un error en la solicitud");
         });
-    });
-    };//getData
-
+    }
+    
     getData();
     let shopContent = document.getElementById("shopContent");
     function createCards(prods){
@@ -62,7 +62,8 @@ function getData(){
                         <div class="card-body price-shop">
                             <h5 class="card-title1">${prod.name}</h5>
                         <br>
-                            <h6 class="card-title3">${prod.descripcion}</h6>
+                        <h6 class="card-title3">${prod.description}</h6>
+
                             <h5 class="card-title2">${prod.precio}</h5>
                         <br>
                         <button type="button" class="boton1">Comprar</button>

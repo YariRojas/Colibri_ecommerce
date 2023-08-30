@@ -127,7 +127,7 @@ btnImg.addEventListener("click", function (event) {
     event.preventDefault();
     var myWidget = cloudinary.createUploadWidget({
         cloudName: 'dinq39jcf',
-        uploadPreset: 'q7vp9g0r',
+        uploadPreset: 'hfzor1v2',
         multiple: false
     }, (error, result) => {
         if (!error && result && result.event === "success") {
