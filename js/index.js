@@ -1,18 +1,5 @@
 const Users = JSON.parse(localStorage.getItem('login_success')) || false;
 
-if (!Users) {
-    Swal.fire({
-        icon: 'error',
-        title: 'Acceso denegado',
-        text: 'Debes iniciar sesión para acceder a esta página.',
-        showConfirmButton: false,
-        timer: 2000, // cerrar después de 2 segundos
-        willClose: () => {
-            window.location.href = 'login.html';
-        }
-    });
-}
-
 const logout = document.querySelector('#logout');
 
 logout.addEventListener('click', () => {

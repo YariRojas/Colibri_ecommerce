@@ -1,6 +1,11 @@
 body {
 	line-height: 1em;
 	font-family: 'Raleway';
+
+}
+
+h2{
+	color:#4ed957;
 }
 
 .grid-container {
