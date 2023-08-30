@@ -4,14 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const productList = document.getElementById('shopContent');
 
 //productos del Local Storage
-    let products = JSON.parse(localStorage.getItem('producto')) || [];
+    let products = JSON.parse(localStorage.getItem('producto')) || []; 
+    console.log (products);
     products.forEach(function (product) {
+
         const element = createProductElement(product);
         productList.appendChild(element);
     });
 });
 
     function createProductElement(product) {
+
     const element = document.createElement('div');
     element.className = 'col';
     element.innerHTML = `<div class="row row-cols-1 row-cols-md-1 g-1">
@@ -62,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="card-body price-shop">
                             <h5 class="card-title1">${prod.name}</h5>
                         <br>
-                        <h6 class="card-title3">${prod.description}</h6>
+                        <h6 class="card-title3">${prod.descripcion}</h6>
 
                             <h5 class="card-title2">${prod.precio}</h5>
                         <br>
