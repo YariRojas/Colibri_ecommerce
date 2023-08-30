@@ -50,6 +50,16 @@ const signupForm = document.querySelector('#signupForm');
             return;
         }
 
+        // Validar el número antes de continuar
+        if (!validarNumero(phoneNumber)) {
+            await Swal.fire({
+                icon: 'error',
+                title: 'Número no válido',
+                text: 'Por favor, ingresa un número de 10 dígitos sin más de 4 dígitos repetidos consecutivamente.',
+            });
+            return;
+        }
+
         // Validar las contraseñas antes de continuar
         if (!validarContrasena(password, confirmPassword)) {
             await Swal.fire({
@@ -60,15 +70,7 @@ const signupForm = document.querySelector('#signupForm');
             return;
         }
 
-        // Validar el número antes de continuar
-        if (!validarNumero(phoneNumber)) {
-            await Swal.fire({
-                icon: 'error',
-                title: 'Número no válido',
-                text: 'Por favor, ingresa un número de 10 dígitos sin más de 4 dígitos repetidos consecutivamente.',
-            });
-            return;
-        }
+        
 
         const Users = JSON.parse(localStorage.getItem('users')) || [];
         const isUserRegistered = Users.find(user => user.email === email);
