@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     </div>`;
         return element;
-    }
+    }//function createProductElement
     
     function getData() {
         let promesa = fetch("data.json", {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch((error) => {
             console.error(error, "Ocurrió un error en la solicitud");
         });
-    }
+    }//function getData
     
     getData();
     let shopContent = document.getElementById("shopContent");
@@ -75,3 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>`);
         });
     } // create cards
+
+
+    var requestOptions = {
+        method: 'POST',
+        redirect: 'follow'
+      };
+      
+      fetch("http://localhost:8080/productos/", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
