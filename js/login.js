@@ -1,20 +1,3 @@
-/*const express = require('express');
-const app = express();
-
-//CORS
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:8080'); 
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-});
-
-
-app.listen(8080, () => {
-    console.log('Servidor escuchando en el puerto 8080');
-});*/
-
-
 function validarNombre(nombre) {
     return /^[a-zA-Z ]+$/.test(nombre);
 }
@@ -102,31 +85,11 @@ const signupForm = document.querySelector('#signupForm');
             Users.push({ name: name, email: email, password: password, phoneNumber: phoneNumber });
             localStorage.setItem('users', JSON.stringify(Users));
 
-            //FETCH 
-            
-const userData = {
-    name: name,
-    email: email,
-    password: password,
-    phoneNumber: phoneNumber
-};
-
-// Realizar la solicitud Fetch POST
-const requestOptions = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'  
-    },
-    body: JSON.stringify(userData), 
-    redirect: 'follow'
-};
-
-fetch("http://localhost:8080/login/", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-
-
+            await Swal.fire({
+                icon: 'success',
+                title: 'Registro exitoso',
+                text: '¡El registro se ha completado con éxito!'
+            });
 
 document.querySelector('#signupName').value = '';
 document.querySelector('#signupEmail').value = '';
@@ -171,6 +134,8 @@ if (loginForm) {
     });
 }
 
+
+/*
 //FETCH POST
 var requestOptions = {
     method: 'POST',
@@ -194,3 +159,6 @@ var requestOptions = {
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
+
+
+*/
